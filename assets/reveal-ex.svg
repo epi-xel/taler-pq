@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 189.42 83">
+  <defs>
+    <style>
+      .rex-cls-1 {
+        fill: #fbd63b;
+      }
+
+      .rex-cls-2 {
+        fill: #fff;
+      }
+
+      .rex-cls-3 {
+        filter: url(#dropshadow2);
+      }
+
+      .rex-cls-4 {
+        stroke: #65c8d0;
+      }
+
+      .rex-cls-4, .rex-cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .rex-cls-6 {
+        filter: url(#dropshadow2-2);
+      }
+
+      .rex-cls-7 {
+        fill: #65c8d0;
+      }
+
+      .rex-cls-5 {
+        stroke: #fbd63b;
+      }
+    </style>
+    <filter id="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2-2" data-name="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="Link">
+    <g id="Refresh_Derive" data-name="Refresh Derive">
+      <g id="dh">
+        <g id="dh1">
+          <g>
+            <g class="rex-cls-3">
+              <ellipse class="rex-cls-2" cx="40.53" cy="41.08" rx="32.77" ry="33.16"/>
+              <ellipse class="rex-cls-4" cx="40.53" cy="41.08" rx="32.77" ry="33.16"/>
+            </g>
+            <path class="rex-cls-7" d="M50.77,43.09l2.42,2.58c.58.62,1.57.62,2.15,0l1.35-1.43c.58-.62,1.57-.62,2.15,0l1.22,1.3c.63.67,1.71.61,2.26-.12l2.58-3.43c.4-.53.4-1.25,0-1.78l-3.2-4.25c-.28-.37-.72-.59-1.18-.59h-20.21c-.54,0-1.01-.3-1.29-.76-2.03-3.35-5.53-5.54-9.54-5.54-6.25,0-11.31,5.38-11.31,12.02s5.06,12.02,11.31,12.02c4.01,0,7.51-2.19,9.54-5.54.28-.46.75-.76,1.29-.76h1.99c.41,0,.8-.17,1.08-.47l.64-.68c.58-.62,1.57-.62,2.15,0h0c.58.62,1.57.62,2.15,0l2.42-2.58h0ZM24.65,44.52c-1.78,0-3.23-1.55-3.23-3.44s1.45-3.44,3.23-3.44,3.23,1.55,3.23,3.44-1.45,3.44-3.23,3.44h0Z"/>
+          </g>
+          <g>
+            <g class="rex-cls-6">
+              <ellipse class="rex-cls-2" cx="147.91" cy="41.54" rx="33.58" ry="33.62"/>
+              <ellipse class="rex-cls-5" cx="147.91" cy="41.54" rx="33.58" ry="33.62"/>
+            </g>
+            <path class="rex-cls-1" d="M148.95,52.81v2.82h-2.08v-2.82c-1.77-.63-2.85-2.87-1.43-5.19,2.59-2.28,5.6-.4,5.6,2.16,0,1.38-.89,2.55-2.08,3.03h0ZM140.1,33.3c0-6.96,8.69-11.81,15.63-3.89v9.79s-7.82-.58-7.82-.58l-7.82.58v-5.9h0ZM158.85,39.41v-6.11c0-6.17-4.9-11.17-10.94-11.17s-10.94,5-10.94,11.17v6.11l-3.65.27v20.2l14.59,1.06,14.59-1.06v-20.2l-3.65-.27h0Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

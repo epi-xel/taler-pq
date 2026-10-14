@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1392.6 591.29">
+  <defs>
+    <style>
+      .cac-cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cac-cls-2 {
+        filter: url(#dropshadow2-4);
+      }
+
+      .cac-cls-3 {
+        stroke: #0042b3;
+        stroke-width: 3px;
+      }
+
+      .cac-cls-3, .cac-cls-4, .cac-cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cac-cls-3, .cac-cls-4, .cac-cls-5, .cac-cls-6 {
+        fill: none;
+      }
+
+      .cac-cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cac-cls-8, .cac-cls-9 {
+        fill: #fff;
+      }
+
+      .cac-cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cac-cls-11 {
+        letter-spacing: -.02em;
+      }
+
+      .cac-cls-12 {
+        filter: url(#dropshadow2);
+      }
+
+      .cac-cls-13 {
+        letter-spacing: .08em;
+      }
+
+      .cac-cls-14, .cac-cls-15 {
+        fill: #0042b3;
+      }
+
+      .cac-cls-16 {
+        letter-spacing: 0em;
+      }
+
+      .cac-cls-17 {
+        filter: url(#dropshadow);
+      }
+
+      .cac-cls-18 {
+        filter: url(#dropshadow2-2);
+      }
+
+      .cac-cls-19 {
+        fill: #c6d6ee;
+      }
+
+      .cac-cls-20 {
+        letter-spacing: -.02em;
+      }
+
+      .cac-cls-21 {
+        letter-spacing: 0em;
+      }
+
+      .cac-cls-22 {
+        filter: url(#dropshadow-2);
+      }
+
+      .cac-cls-23 {
+        letter-spacing: 0em;
+      }
+
+      .cac-cls-24 {
+        letter-spacing: 0em;
+      }
+
+      .cac-cls-25 {
+        letter-spacing: 0em;
+      }
+
+      .cac-cls-26 {
+        filter: url(#dropshadow2-3);
+      }
+
+      .cac-cls-27 {
+        letter-spacing: -.01em;
+      }
+
+      .cac-cls-4 {
+        stroke: #fff;
+      }
+
+      .cac-cls-4, .cac-cls-5 {
+        stroke-width: 2px;
+      }
+
+      .cac-cls-28 {
+        letter-spacing: 0em;
+      }
+
+      .cac-cls-5, .cac-cls-6 {
+        stroke: #0042b3;
+      }
+
+      .cac-cls-29 {
+        font-size: 17.63px;
+      }
+
+      .cac-cls-29, .cac-cls-9 {
+        font-family: Montserrat-Regular, Montserrat;
+      }
+
+      .cac-cls-6 {
+        stroke-linecap: square;
+        stroke-width: 2.3px;
+      }
+
+      .cac-cls-30 {
+        fill: #fbd63b;
+      }
+
+      .cac-cls-9 {
+        font-size: 18.13px;
+      }
+
+      .cac-cls-15 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .cac-cls-31 {
+        filter: url(#dropshadow2-5);
+      }
+
+      .cac-cls-32 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <filter id="dropshadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="5" dy="5"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow-2" data-name="dropshadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="5" dy="5"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2-2" data-name="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2-3" data-name="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2-4" data-name="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2-5" data-name="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="Refresh_Protocol" data-name="Refresh Protocol">
+    <g id="cust-ex">
+      <g>
+        <g class="cac-cls-17">
+          <ellipse class="cac-cls-8" cx="98.12" cy="330.63" rx="81.77" ry="79.12"/>
+        </g>
+        <text class="cac-cls-29" transform="translate(53.09 376.81) scale(1.03 1)"><tspan class="cac-cls-11" x="0" y="0">C</tspan><tspan x="12.36" y="0">us</tspan><tspan class="cac-cls-10" x="32.84" y="0">t</tspan><tspan x="39.66" y="0">o</tspan><tspan class="cac-cls-7" x="50.71" y="0">m</tspan><tspan class="cac-cls-21" x="69.44" y="0">er</tspan></text>
+        <path class="cac-cls-6" d="M70.33,347.88c0-10.05,13.9-10.05,20.84-16.75,3.47-3.35-6.95-3.35-6.95-20.1,0-11.17,4.63-16.75,13.9-16.75s13.9,5.58,13.9,16.75c0,16.75-10.42,16.75-6.95,20.1,6.95,6.7,20.84,6.7,20.84,16.75"/>
+      </g>
+      <g>
+        <g class="cac-cls-22">
+          <path class="cac-cls-14" d="M1297.23,246.89c44.01,0,79.69,36.43,79.69,81.38s-35.68,81.38-79.69,81.38-79.69-36.43-79.69-81.38,35.68-81.38,79.69-81.38"/>
+        </g>
+        <text class="cac-cls-9" transform="translate(1253.9885 381.79) scale(.9793 1)"><tspan class="cac-cls-20" x="0" y="0">E</tspan><tspan class="cac-cls-1" x="11.86" y="0">x</tspan><tspan class="cac-cls-24" x="21.19" y="0">c</tspan><tspan class="cac-cls-25" x="31.25" y="0">ha</tspan><tspan class="cac-cls-32" x="54.22" y="0">n</tspan><tspan x="66.53" y="0">ge</tspan></text>
+        <g>
+          <path class="cac-cls-8" d="M1267.55,321.58c.38.16.82.16,1.2-.03l11.82-5.73c.76-.39,1.07-1.36.71-2.16-.35-.77-1.21-1.13-1.95-.77l-8.28,4.02c3.95-12.61,14.95-21.03,27.62-21.03s24.88,9.46,28.23,23c.21.86,1.04,1.37,1.85,1.15.8-.23,1.29-1.11,1.07-1.97-3.69-14.95-16.5-25.4-31.15-25.4s-26.12,9.3-30.51,23.21l-3.48-9.28c-.26-.84-1.12-1.31-1.91-1.03-.79.27-1.23,1.19-.97,2.03.02.06.05.13.08.19l4.83,12.91c.15.4.45.74.85.9h0Z"/>
+          <path class="cac-cls-8" d="M1334.33,345.4s-.03-.06-.03-.1l-4.83-12.91c-.15-.4-.45-.74-.85-.9-.38-.16-.82-.15-1.2.03l-11.82,5.73c-.77.34-1.14,1.29-.82,2.11.32.82,1.21,1.21,1.98.87.03-.02.06-.03.09-.05l8.28-4.02c-3.98,12.61-15,21.03-27.65,21.03-13.27,0-24.88-9.46-28.23-23-.21-.86-1.04-1.37-1.85-1.15-.8.23-1.29,1.11-1.07,1.97,3.68,14.96,16.5,25.4,31.15,25.4s26.11-9.3,30.51-23.21l3.48,9.28c.29.84,1.15,1.28,1.94.97.79-.31,1.2-1.23.91-2.07h0Z"/>
+        </g>
+      </g>
+    </g>
+    <g id="refresh-der" class="fragment fade">
+      <g>
+        <g>
+          <g class="cac-cls-12">
+            <rect class="cac-cls-8" x="386.28" y="86.47" width="133.87" height="85.72" rx="14.59" ry="14.59"/>
+            <rect class="cac-cls-5" x="386.28" y="86.47" width="133.87" height="85.72" rx="14.59" ry="14.59"/>
+          </g>
+          <text class="cac-cls-15" transform="translate(404.63 124.15)"><tspan x="0" y="0">Re</tspan><tspan class="cac-cls-13" x="32.78" y="0">f</tspan><tspan class="cac-cls-28" x="43.99" y="0">r</tspan><tspan x="54.12" y="0">esh</tspan><tspan x="8.51" y="28.8">De</tspan><tspan class="cac-cls-16" x="43.48" y="28.8">r</tspan><tspan x="53.72" y="28.8">i</tspan><tspan class="cac-cls-27" x="60.95" y="28.8">v</tspan><tspan class="cac-cls-23" x="74.94" y="28.8">e</tspan></text>
+        </g>
+        <g>
+          <g class="cac-cls-18">
+            <rect class="cac-cls-8" x="386.28" y="285.4" width="133.87" height="85.72" rx="14.59" ry="14.59"/>
+            <rect class="cac-cls-5" x="386.28" y="285.4" width="133.87" height="85.72" rx="14.59" ry="14.59"/>
+          </g>
+          <text class="cac-cls-15" transform="translate(404.63 323.08)"><tspan x="0" y="0">Re</tspan><tspan class="cac-cls-13" x="32.78" y="0">f</tspan><tspan class="cac-cls-28" x="43.99" y="0">r</tspan><tspan x="54.12" y="0">esh</tspan><tspan x="8.51" y="28.8">De</tspan><tspan class="cac-cls-16" x="43.48" y="28.8">r</tspan><tspan x="53.72" y="28.8">i</tspan><tspan class="cac-cls-27" x="60.95" y="28.8">v</tspan><tspan class="cac-cls-23" x="74.94" y="28.8">e</tspan></text>
+        </g>
+        <g>
+          <g class="cac-cls-26">
+            <rect class="cac-cls-8" x="382.54" y="493.64" width="133.87" height="85.72" rx="14.59" ry="14.59"/>
+            <rect class="cac-cls-5" x="382.54" y="493.64" width="133.87" height="85.72" rx="14.59" ry="14.59"/>
+          </g>
+          <text class="cac-cls-15" transform="translate(400.89 531.31)"><tspan x="0" y="0">Re</tspan><tspan class="cac-cls-13" x="32.78" y="0">f</tspan><tspan class="cac-cls-28" x="43.99" y="0">r</tspan><tspan x="54.12" y="0">esh</tspan><tspan x="8.51" y="28.8">De</tspan><tspan class="cac-cls-16" x="43.48" y="28.8">r</tspan><tspan x="53.72" y="28.8">i</tspan><tspan class="cac-cls-27" x="60.95" y="28.8">v</tspan><tspan class="cac-cls-23" x="74.94" y="28.8">e</tspan></text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <line class="cac-cls-3" x1="348.38" y1="130.81" x2="244.36" y2="130.81"/>
+          <path class="cac-cls-14" d="M327.88,116.42c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07.45.7,1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+        <g>
+          <line class="cac-cls-3" x1="348.38" y1="329.69" x2="203.96" y2="329.69"/>
+          <path class="cac-cls-14" d="M327.88,315.29c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07s1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+        <g>
+          <line class="cac-cls-3" x1="348.38" y1="536.19" x2="244.36" y2="536.19"/>
+          <path class="cac-cls-14" d="M327.88,521.8c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07.45.7,1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+        <line class="cac-cls-3" x1="244.33" y1="130.82" x2="244.34" y2="536.2"/>
+      </g>
+    </g>
+    <g id="blind" class="fragment fade">
+      <g>
+        <g>
+          <line class="cac-cls-3" x1="650.99" y1="130.81" x2="546.97" y2="130.81"/>
+          <path class="cac-cls-14" d="M630.49,116.42c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07s1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+        <g>
+          <line class="cac-cls-3" x1="650.99" y1="329.74" x2="546.97" y2="329.74"/>
+          <path class="cac-cls-14" d="M630.49,315.34c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07s1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+        <g>
+          <line class="cac-cls-3" x1="650.99" y1="536.19" x2="546.97" y2="536.19"/>
+          <path class="cac-cls-14" d="M630.49,521.8c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07s1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+      </g>
+      <g>
+        <path class="cac-cls-3" d="M685.16,74.09h152.58v104.17h-152.58v-104.17ZM685.16,74.09l70.54,68.5c3.22,3.12,8.3,3.12,11.52,0l70.51-68.5M685.16,178.26l53.87-51.86M837.73,178.26l-54.06-51.65"/>
+        <path class="cac-cls-3" d="M685.16,276.17h152.58v104.17h-152.58v-104.17ZM685.16,276.17l70.54,68.5c3.22,3.12,8.3,3.12,11.52,0l70.51-68.5M685.16,380.35l53.87-51.86M837.73,380.35l-54.06-51.65"/>
+        <path class="cac-cls-3" d="M685.16,479.42h152.58v104.17h-152.58v-104.17ZM685.16,479.42l70.54,68.5c3.22,3.12,8.3,3.12,11.52,0l70.51-68.5M685.16,583.59l53.87-51.86M837.73,583.59l-54.06-51.65"/>
+      </g>
+    </g>
+    <g id="select" class="fragment fade">
+      <g>
+        <line class="cac-cls-3" x1="869.2" y1="328.41" x2="1174.26" y2="328.69"/>
+        <path class="cac-cls-14" d="M889.69,342.82c.45-.7.24-1.63-.46-2.07l-19.35-12.35,19.37-12.31c.7-.44.91-1.37.46-2.07-.44-.7-1.38-.9-2.07-.46l-21.36,13.57c-.43.27-.69.75-.7,1.26,0,.51.26.99.69,1.27l21.33,13.61c.25.16.53.23.8.23.5,0,.98-.25,1.27-.69Z"/>
+      </g>
+    </g>
+    <g id="open" class="fragment fade">
+      <g>
+        <g>
+          <line class="cac-cls-3" x1="962.56" y1="538.55" x2="858.54" y2="538.55"/>
+          <path class="cac-cls-14" d="M942.05,524.15c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07s1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+        <g>
+          <line class="cac-cls-3" x1="965.04" y1="131.32" x2="861.02" y2="131.32"/>
+          <path class="cac-cls-14" d="M944.54,116.92c-.45.7-.24,1.63.46,2.07l19.36,12.33-19.36,12.33c-.7.45-.91,1.37-.46,2.07s1.38.9,2.07.46l21.34-13.59c.43-.28.69-.75.69-1.27s-.26-.99-.69-1.27l-21.34-13.59c-.25-.16-.53-.23-.8-.23-.5,0-.98.25-1.27.69Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <path class="cac-cls-3" d="M1073.03,1.95l81.09,67.22v112.93h-162.17v-112.93L1073.03,1.95ZM991.94,69.17l57.34,56.49-57.34,56.44,57.34-56.44c13.25-13.04,34.24-13.04,47.49,0l57.34,56.44-57.34-56.44,57.34-56.49"/>
+            <path class="cac-cls-19" d="M1049.53,123.83l-38.25-37.87-.23-62.04c0-5.97,4.74-10.8,10.59-10.8h100.34c5.85,0,10.59,4.84,10.59,10.8l.71,63.28-37.02,36.63-1.03-.9c-13.26-11.54-32.88-11.16-45.7.9h0Z"/>
+          </g>
+          <g>
+            <g class="cac-cls-2">
+              <ellipse class="cac-cls-30" cx="1072.17" cy="63.93" rx="31.34" ry="31.58"/>
+            </g>
+            <ellipse class="cac-cls-4" cx="1072.23" cy="64" rx="24.87" ry="25.06"/>
+            <path class="cac-cls-8" d="M1080.62,57.7h-7.4v-1.24c0-1.32-.08-2.18-.26-2.58-.17-.41-.54-.61-1.1-.61-.45,0-.79.18-1.02.53s-.34.88-.34,1.58c0,1.17.23,1.99.7,2.45.45.47,1.78,1.38,3.99,2.73,1.88,1.14,3.16,2.02,3.85,2.63.68.61,1.26,1.47,1.73,2.58.47,1.11.7,2.5.7,4.16,0,2.66-.63,4.74-1.9,6.25-1.27,1.51-3.17,2.45-5.71,2.8v2.8h-3.41v-2.9c-1.98-.2-3.71-.96-5.18-2.3-1.48-1.33-2.22-3.66-2.22-6.98v-1.46h7.4v1.83c0,2,.08,3.25.23,3.74.15.49.52.73,1.11.73.5,0,.87-.17,1.12-.51.24-.34.37-.84.37-1.5,0-1.67-.12-2.87-.35-3.59-.23-.72-1.03-1.5-2.38-2.35-2.26-1.43-3.79-2.47-4.61-3.15-.81-.67-1.51-1.61-2.11-2.83-.59-1.22-.89-2.59-.89-4.13,0-2.23.63-3.97,1.88-5.24,1.25-1.27,3.13-2.05,5.63-2.34v-2.38h3.41v2.38c2.28.3,3.99,1.07,5.13,2.32,1.14,1.25,1.7,2.97,1.7,5.18,0,.31-.02.77-.07,1.4Z"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path class="cac-cls-3" d="M1067.03,409.64l81.09,67.22v112.93h-162.17v-112.93l81.09-67.22ZM985.94,476.86l57.34,56.49-57.34,56.44,57.34-56.44c13.25-13.04,34.24-13.04,47.49,0l57.34,56.44-57.34-56.44,57.34-56.49"/>
+            <path class="cac-cls-19" d="M1043.54,531.52l-38.25-37.87-.23-62.04c0-5.97,4.74-10.8,10.59-10.8h100.34c5.85,0,10.59,4.84,10.59,10.8l.71,63.28-37.02,36.63-1.03-.9c-13.26-11.54-32.88-11.16-45.7.9h0Z"/>
+          </g>
+          <g>
+            <g class="cac-cls-31">
+              <ellipse class="cac-cls-30" cx="1066.17" cy="471.62" rx="31.34" ry="31.58"/>
+            </g>
+            <ellipse class="cac-cls-4" cx="1066.23" cy="471.69" rx="24.87" ry="25.06"/>
+            <path class="cac-cls-8" d="M1074.62,465.39h-7.4v-1.24c0-1.32-.08-2.18-.26-2.58-.17-.41-.54-.61-1.1-.61-.45,0-.79.18-1.02.53s-.34.88-.34,1.58c0,1.17.23,1.99.7,2.45.45.47,1.78,1.38,3.99,2.73,1.88,1.14,3.16,2.02,3.85,2.63.68.61,1.26,1.47,1.73,2.58.47,1.11.7,2.5.7,4.16,0,2.66-.63,4.74-1.9,6.25-1.27,1.51-3.17,2.45-5.71,2.8v2.8h-3.41v-2.9c-1.98-.2-3.71-.96-5.18-2.3-1.48-1.33-2.22-3.66-2.22-6.98v-1.46h7.4v1.83c0,2,.08,3.25.23,3.74.15.49.52.73,1.11.73.5,0,.87-.17,1.12-.51.24-.34.37-.84.37-1.5,0-1.67-.12-2.87-.35-3.59-.23-.72-1.03-1.5-2.38-2.35-2.26-1.43-3.79-2.47-4.61-3.15-.81-.67-1.51-1.61-2.11-2.83-.59-1.22-.89-2.59-.89-4.13,0-2.23.63-3.97,1.88-5.24,1.25-1.27,3.13-2.05,5.63-2.34v-2.38h3.41v2.38c2.28.3,3.99,1.07,5.13,2.32,1.14,1.25,1.7,2.97,1.7,5.18,0,.31-.02.77-.07,1.4Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="sign" class="fragment fade">
+      <path class="cac-cls-14" d="M891.91,207.58l-1.47-1.6,2.28-2.59c1.2-1.47,1.49-4.44-1.63-7.96-3.15-3.43-6.39-3.1-7.58-1.81l-34.45,35,10.99,11.97,27.25-31.04,1.39,1.52c.54.53.59,1.42.11,2.02l-20.78,22.62c-.9.95-.93,2.51-.06,3.49.87.98,2.3,1.01,3.21.06.02-.02.04-.04.06-.06l20.78-22.62c2.25-2.52,2.19-6.54-.12-9h0Z"/>
+      <path class="cac-cls-14" d="M823.49,257.37c-.86.96-1.69,1.95-2.49,2.97l-9.82,12.07,8.66,9.42,11.09-10.7c.94-.87,1.85-1.77,2.73-2.71l22.96-24.07-11-11.98-22.12,24.99h0Z"/>
+      <path class="cac-cls-14" d="M799.93,288.25c-.32.62-.2,1.4.29,1.88l-2.59,4.58c-.35.62-.17,1.43.4,1.81.19.12.4.19.62.19.23,0,.45-.07.64-.21l4.17-2.85c.43.52,1.13.65,1.7.31l10.77-8.81-7.84-8.53-8.16,11.62h0Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1257.5 420.18">
+  <defs>
+    <style>
+      .rand-cls-1, .rand-cls-2, .rand-cls-3, .rand-cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .rand-cls-1, .rand-cls-2, .rand-cls-4 {
+        stroke-width: 2px;
+      }
+
+      .rand-cls-1, .rand-cls-5 {
+        fill: #fff;
+      }
+
+      .rand-cls-1, .rand-cls-4 {
+        stroke: #fbd63b;
+      }
+
+      .rand-cls-6 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .rand-cls-6, .rand-cls-7 {
+        font-size: 100.41px;
+      }
+
+      .rand-cls-6, .rand-cls-7, .rand-cls-3, .rand-cls-8 {
+        fill: #0042b3;
+      }
+
+      .rand-cls-2, .rand-cls-3 {
+        stroke: #0042b3;
+      }
+
+      .rand-cls-2, .rand-cls-4, .rand-cls-9 {
+        fill: none;
+      }
+
+      .rand-cls-10 {
+        fill: #fbd63b;
+      }
+
+      .rand-cls-11 {
+        filter: url(#dropshadow2);
+      }
+
+      .rand-cls-12 {
+        filter: url(#dropshadow);
+      }
+
+      .rand-cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .rand-cls-14 {
+        font-size: 28px;
+      }
+
+      .rand-cls-14, .rand-cls-15 {
+        font-family: Montserrat-Regular, Montserrat;
+      }
+
+      .rand-cls-16 {
+        letter-spacing: 0em;
+      }
+
+      .rand-cls-17 {
+        filter: url(#dropshadow2-2);
+      }
+
+      .rand-cls-7 {
+        font-family: Montserrat-Medium, Montserrat;
+        font-weight: 500;
+      }
+
+      .rand-cls-18 {
+        filter: url(#dropshadow-2);
+      }
+
+      .rand-cls-3 {
+        stroke-width: .75px;
+      }
+
+      .rand-cls-19 {
+        filter: url(#dropshadow2-3);
+      }
+
+      .rand-cls-8 {
+        fill-rule: evenodd;
+      }
+
+      .rand-cls-9 {
+        stroke: #0042b3;
+        stroke-linecap: square;
+        stroke-width: 2.3px;
+      }
+
+      .rand-cls-15 {
+        font-size: 27px;
+      }
+    </style>
+    <filter id="dropshadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="5" dy="5"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2-2" data-name="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow-2" data-name="dropshadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="5" dy="5"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropshadow2-3" data-name="dropshadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="3"/>
+      <feComponentTransfer>
+        <feFuncA slope="0.5" type="linear"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="randomness">
+    <g id="_1" class="fragment fade" data-name="1">
+      <g>
+        <g class="rand-cls-12">
+          <ellipse class="rand-cls-5" cx="98.12" cy="94.94" rx="81.77" ry="79.12"/>
+        </g>
+        <text class="rand-cls-14" transform="translate(87.21 145.12) scale(1.03 1)"><tspan x="0" y="0">B</tspan></text>
+        <path class="rand-cls-9" d="M70.33,112.19c0-10.05,13.9-10.05,20.84-16.75,3.47-3.35-6.95-3.35-6.95-20.1,0-11.17,4.63-16.75,13.9-16.75s13.9,5.58,13.9,16.75c0,16.75-10.42,16.75-6.95,20.1,6.95,6.7,20.84,6.7,20.84,16.75"/>
+      </g>
+      <g>
+        <g class="rand-cls-11">
+          <ellipse class="rand-cls-5" cx="284.89" cy="97.75" rx="37.13" ry="36.39"/>
+          <ellipse class="rand-cls-4" cx="284.89" cy="97.75" rx="37.13" ry="36.39"/>
+        </g>
+        <path class="rand-cls-10" d="M296.29,99.87l4,3.95,4-3.95,4,3.95,4.93-6.07-4.93-6.07h-24.95c-2.22-4.01-6.47-6.68-11.4-6.68-7.15,0-12.94,5.71-12.94,12.75s5.79,12.75,12.94,12.75c4.93,0,9.18-2.67,11.4-6.68h4l2.46-2.43,2.46,2.43,4-3.95h0ZM266.41,101.39c-2.03,0-3.7-1.64-3.7-3.64s1.66-3.64,3.7-3.64,3.7,1.64,3.7,3.64-1.66,3.64-3.7,3.64h0Z"/>
+      </g>
+      <text class="rand-cls-15" transform="translate(463.18 84.13)"><tspan x="0" y="0">Public</tspan><tspan class="rand-cls-16" x="-18.32" y="32.4">m</tspan><tspan x="10.38" y="32.4">ess</tspan><tspan class="rand-cls-16" x="53.09" y="32.4">a</tspan><tspan class="rand-cls-13" x="69.08" y="32.4">ge</tspan></text>
+      <text class="rand-cls-7" transform="translate(357.58 129.52) scale(1.05 1)"><tspan x="0" y="0">+</tspan></text>
+    </g>
+    <g id="_2" class="fragment fade" data-name="2">
+      <g id="sig">
+        <g>
+          <g>
+            <g class="rand-cls-17">
+              <rect class="rand-cls-5" x="977.97" y="27.11" width="252.74" height="136.4" rx="14.96" ry="14.96"/>
+              <rect class="rand-cls-2" x="977.97" y="27.11" width="252.74" height="136.4" rx="14.96" ry="14.96"/>
+            </g>
+            <path class="rand-cls-3" d="M1096.35,163.67h-94.24c-24.13-.16-24.13-10.72-24.13-23.95V51.22c0-18.61,3.38-24.11,24.13-23.95h94.24"/>
+          </g>
+          <g>
+            <ellipse class="rand-cls-1" cx="1039.92" cy="116.5" rx="37.13" ry="36.39"/>
+            <path class="rand-cls-10" d="M1051.33,118.63l4,3.95,4-3.95,4,3.95,4.93-6.07-4.93-6.07h-24.95c-2.22-4.01-6.47-6.68-11.4-6.68-7.15,0-12.94,5.71-12.94,12.75s5.79,12.75,12.94,12.75c4.93,0,9.18-2.67,11.4-6.68h4l2.46-2.43,2.46,2.43,4-3.95h0ZM1021.44,120.15c-2.03,0-3.7-1.64-3.7-3.64s1.66-3.64,3.7-3.64,3.7,1.64,3.7,3.64-1.66,3.64-3.7,3.64h0Z"/>
+          </g>
+          <g>
+            <path class="rand-cls-5" d="M1020.31,62.37c-1.84-.54-3.32-1.24-4.44-2.1l1.96-4.38c1.07.79,2.34,1.42,3.82,1.9,1.47.48,2.95.72,4.42.72,1.64,0,2.85-.24,3.64-.74.79-.49,1.18-1.14,1.18-1.96,0-.6-.23-1.1-.7-1.49-.46-.4-1.06-.71-1.78-.95s-1.71-.5-2.94-.79c-1.9-.46-3.46-.91-4.67-1.36-1.21-.46-2.25-1.19-3.12-2.19s-1.3-2.35-1.3-4.03c0-1.46.39-2.78,1.18-3.97s1.97-2.13,3.55-2.82c1.58-.7,3.51-1.04,5.8-1.04,1.59,0,3.15.19,4.67.58s2.85.93,3.99,1.65l-1.78,4.42c-2.31-1.32-4.61-1.98-6.92-1.98-1.62,0-2.81.26-3.58.79-.77.53-1.16,1.22-1.16,2.09s.45,1.5,1.34,1.92c.89.42,2.25.83,4.08,1.24,1.9.46,3.46.91,4.67,1.36,1.21.46,2.25,1.17,3.12,2.16.87.98,1.3,2.31,1.3,3.99,0,1.44-.4,2.75-1.19,3.93-.8,1.18-1.99,2.13-3.58,2.82s-3.53,1.04-5.81,1.04c-1.97,0-3.88-.27-5.72-.81Z"/>
+            <path class="rand-cls-5" d="M1040.48,39.83c-.64-.6-.96-1.34-.96-2.23s.32-1.63.96-2.23,1.47-.9,2.5-.9,1.85.29,2.5.86c.64.58.96,1.29.96,2.16,0,.93-.32,1.71-.96,2.32s-1.47.92-2.5.92-1.85-.3-2.5-.9ZM1040.19,43.42h5.56v19.33h-5.56v-19.33Z"/>
+            <path class="rand-cls-5" d="M1070.72,43.42v16.1c0,3.55-.92,6.18-2.75,7.91-1.83,1.72-4.51,2.59-8.02,2.59-1.85,0-3.61-.23-5.28-.68-1.66-.46-3.04-1.11-4.14-1.98l2.21-4.02c.81.67,1.83,1.2,3.07,1.6s2.47.59,3.71.59c1.93,0,3.35-.44,4.26-1.31.92-.88,1.37-2.2,1.37-3.97v-.83c-1.45,1.6-3.47,2.41-6.06,2.41-1.76,0-3.37-.39-4.83-1.17s-2.62-1.87-3.48-3.29c-.86-1.41-1.28-3.04-1.28-4.89s.43-3.47,1.28-4.89c.86-1.41,2.02-2.51,3.48-3.29s3.07-1.17,4.83-1.17c2.78,0,4.9.92,6.35,2.77v-2.48h5.28ZM1063.82,55.91c.94-.87,1.41-2.02,1.41-3.43s-.47-2.56-1.41-3.43c-.94-.87-2.15-1.31-3.62-1.31s-2.69.44-3.64,1.31-1.43,2.02-1.43,3.43.48,2.56,1.43,3.43c.95.88,2.16,1.31,3.64,1.31s2.68-.44,3.62-1.31Z"/>
+          </g>
+        </g>
+        <text class="rand-cls-15" transform="translate(1118.821 85.9488)"><tspan x="0" y="0">Public</tspan><tspan class="rand-cls-16" x="-18.32" y="32.4">m</tspan><tspan x="10.38" y="32.4">ess</tspan><tspan class="rand-cls-16" x="53.09" y="32.4">a</tspan><tspan class="rand-cls-13" x="69.08" y="32.4">ge</tspan></text>
+      </g>
+      <g>
+        <path class="rand-cls-8" d="M713.32,70.81c0-2.38,1.78-5.3,3.99-6.53l38.58-21.47c2.2-1.23,5.77-1.23,7.98,0l38.6,21.51c2.2,1.23,3.99,4.15,3.99,6.54l-.02,42.88c0,2.38-1.79,5.31-3.99,6.55l-38.67,21.66c-2.2,1.23-5.77,1.23-7.97,0l-38.53-21.65c-2.2-1.24-3.98-4.17-3.98-6.55v-42.95s.01,0,.01,0ZM721.44,67.32l38.34,19.8,36.55-19.54-36.61-19.89-38.28,19.63h0ZM718.96,73.73c0,.88-.62,38.71-.62,38.71-.02,1.19.85,2.65,1.96,3.27l35.88,20.03.33-41.7s-37.55-21.18-37.55-20.31h0ZM763.28,135.65l35.47-20.83c1.36-.8,2.46-2.65,2.46-4.14v-37.17l-37.93,20.21v41.92h0Z"/>
+        <path class="rand-cls-8" d="M730.71,94.62c-2.78,1.49-6.48.4-8.25-2.44-1.77-2.83-.94-6.34,1.84-7.83,2.79-1.49,6.48-.4,8.25,2.44,1.77,2.83.95,6.34-1.84,7.83h0ZM749.35,105.93c-2.78,1.49-6.48.4-8.25-2.44-1.77-2.83-.94-6.34,1.84-7.83,2.79-1.49,6.48-.4,8.25,2.44,1.77,2.83.95,6.34-1.84,7.83h0ZM730.71,114.55c-2.78,1.49-6.48.4-8.25-2.44-1.77-2.83-.94-6.34,1.84-7.83,2.79-1.49,6.48-.4,8.25,2.44,1.77,2.83.95,6.34-1.84,7.83h0ZM749.35,125.86c-2.78,1.49-6.48.4-8.25-2.44-1.77-2.83-.94-6.34,1.84-7.83,2.79-1.49,6.48-.4,8.25,2.44,1.77,2.83.95,6.34-1.84,7.83h0ZM794.91,83.82c-2.79-1.49-6.48-.4-8.25,2.44-1.77,2.83-.95,6.34,1.84,7.83,2.79,1.49,6.48.4,8.25-2.44,1.77-2.83.95-6.34-1.84-7.83ZM785.45,99.44c-2.78-1.49-6.48-.4-8.25,2.44-1.77,2.83-.94,6.34,1.84,7.83,2.79,1.49,6.48.4,8.25-2.44,1.77-2.83.95-6.34-1.84-7.83ZM775.55,114.52c-2.78-1.49-6.48-.4-8.25,2.44-1.77,2.83-.94,6.34,1.84,7.83,2.79,1.49,6.48.4,8.25-2.44,1.77-2.83.95-6.34-1.84-7.83ZM760.26,60.52c-3.7,0-6.7,2.65-6.7,5.93s3,5.93,6.7,5.93,6.7-2.65,6.7-5.93-3-5.93-6.7-5.93Z"/>
+      </g>
+      <text class="rand-cls-7" transform="translate(869.92 127.45) scale(1.05 1)"><tspan x="0" y="0">=</tspan></text>
+      <text class="rand-cls-7" transform="translate(605.16 126.53) scale(1.05 1)"><tspan x="0" y="0">+</tspan></text>
+    </g>
+    <g id="_3" class="fragment fade" data-name="3">
+      <g>
+        <g class="rand-cls-18">
+          <ellipse class="rand-cls-5" cx="101.12" cy="325.13" rx="81.77" ry="79.12"/>
+        </g>
+        <text class="rand-cls-14" transform="translate(90.75 375.31) scale(1.03 1)"><tspan x="0" y="0">A</tspan></text>
+        <path class="rand-cls-9" d="M73.33,342.37c0-10.05,13.9-10.05,20.84-16.75,3.47-3.35-6.95-3.35-6.95-20.1,0-11.17,4.63-16.75,13.9-16.75s13.9,5.58,13.9,16.75c0,16.75-10.42,16.75-6.95,20.1,6.95,6.7,20.84,6.7,20.84,16.75"/>
+      </g>
+      <g>
+        <g class="rand-cls-19">
+          <ellipse class="rand-cls-5" cx="288.49" cy="325.13" rx="37.13" ry="36.39"/>
+          <ellipse class="rand-cls-4" cx="288.49" cy="325.13" rx="37.13" ry="36.39"/>
+        </g>
+        <path class="rand-cls-10" d="M299.9,327.25l4,3.95,4-3.95,4,3.95,4.93-6.07-4.93-6.07h-24.95c-2.22-4.01-6.47-6.68-11.4-6.68-7.15,0-12.94,5.71-12.94,12.75s5.79,12.75,12.94,12.75c4.93,0,9.18-2.67,11.4-6.68h4l2.46-2.43,2.46,2.43,4-3.95h0ZM270.02,328.77c-2.03,0-3.7-1.64-3.7-3.64s1.66-3.64,3.7-3.64,3.7,1.64,3.7,3.64-1.66,3.64-3.7,3.64h0Z"/>
+      </g>
+      <text class="rand-cls-15" transform="translate(467.78 314.51)"><tspan x="0" y="0">Public</tspan><tspan class="rand-cls-16" x="-18.32" y="32.4">m</tspan><tspan x="10.38" y="32.4">ess</tspan><tspan class="rand-cls-16" x="53.09" y="32.4">a</tspan><tspan class="rand-cls-13" x="69.08" y="32.4">ge</tspan></text>
+      <text class="rand-cls-7" transform="translate(362.18 359.9) scale(1.05 1)"><tspan x="0" y="0">+</tspan></text>
+    </g>
+    <g id="_4" class="fragment fade" data-name="4">
+      <text class="rand-cls-7" transform="translate(617.16 354.93) scale(1.05 1)"><tspan x="0" y="0">+</tspan></text>
+      <text class="rand-cls-6" transform="translate(735.41 354.93) scale(1.05 1)"><tspan x="0" y="0">?</tspan></text>
+      <text class="rand-cls-7" transform="translate(873.08 354.93) scale(1.05 1)"><tspan x="0" y="0">=</tspan></text>
+      <text class="rand-cls-6" transform="translate(1005.662 354.9282) scale(1.0471 1)"><tspan x="0" y="0">?</tspan></text>
+    </g>
+  </g>
+</svg>

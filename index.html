@@ -405,23 +405,50 @@
 					Refresh protocol
 					</h2>
 				</section>
-				<section id="refresh-protocol" data-background="white" data-transition="slide" data-auto-animate>
+				<section data-background-iframe="assets/section.html" data-auto-animate>
+					<h2 data-id="refresh-prot-text" style="color:white; font-weight: bold;">
+						Refresh protocol
+					</h2>
+				</section>
+				<section data-background="white" data-auto-animate>
 					<div class="v-stack">
-						<h2 data-id="refresh-prot-text" style="margin:0; color:#0042b3; font-weight: bold;">
+						<h2 data-id="refresh-prot-text" style="color:#0042b3; font-weight: bold; font-size: 42pt">
 							Refresh protocol
 						</h2>
-						<div style="width:100%; display: flex; align-items: center; justify-content: center;">
-							<img src="assets/diagram-recap.svg" style="width: 70%; background: transparent"/>
+						<div id="refresh-prot" style="flex:1; width:100%; margin-top: 20pt;"></div>
+						<h4 class="fragment fade" style="margin-top:10pt; font-weight: normal;">
+							Cut-and-choose
+						</h4>
+					</div>
+				</section>
+				<section data-background="white" data-transition="slide" data-auto-animate>
+					<div class="v-stack">
+						<h3 data-id="refresh-der" style="margin: 30pt; color:#0042b3; font-weight: bold;">
+							Refresh Derive
+						</h3>
+						<div style="width:100%; display:flex; justify-content:center;">
+							<div id="refresh-derive" style="width:70%;"></div>
 						</div>
 					</div>
 				</section>
-				<section id="reobtain-refreshed-coin" data-background="white" data-transition="slide">
+				<section data-background="white" data-auto-animate>
 					<div class="v-stack">
-						<h3 style="margin:0; margin: 30pt; color:#0042b3; font-weight: bold;">
-							Re-obtaining a refreshed coin
+						<h3 data-id="refresh-der" style="margin: 30pt; color:#0042b3; font-weight: bold;">
+							Refresh Derive
 						</h3>
-						<div style="width:100%; display:flex; justify-content:center;">
-							<div id="reobtain-coin" style="width:80%; max-width: 100%; max-height: 100%; display: block;"></div>
+						<h4 style="margin: 30pt; font-weight: normal;">
+							With <strong>cut-and-choose</strong> the Exchange makes sure that planchets are generated in this exact way
+						</h4>
+						<div class="fragment fade">
+							<h4 style="margin-top: 30pt; font-weight: normal;">
+								With an open commitment the Customer reveals 
+							</h4>
+							<div style="width:100%; display:flex; justify-content:center;">
+								<div id="reveal-ex" style="width:20%;"></div>
+							</div>
+							<h4 style="font-weight: normal;">
+								to the Exchange
+							</h4>
 						</div>
 					</div>
 				</section>
@@ -436,28 +463,121 @@
 				</section>
 			-->
 			<!-- Final -->
-				<section id="post-quantum" data-background-image="assets/paper.jpg">
+				<section data-background-iframe="assets/section.html" data-transition="slide">
+					<h2 style="margin:0; color:white; font-weight: bold;">
+						Post-quantum refresh
+					</h2>
+				</section>
+				<section data-background="white">
 					<div class="v-stack">
-						<h2 style="color:#0042b3; font-weight: bold; font-family: 'write me a song'; font-weight: 800; font-size: 60pt">
-							Work in progress
-						</h2>
-						<img class="fragment fade-up" data-fragment-index="1" src="assets/quantum.png" style="font-family: 'write me a song'; height: 300px; background: transparent; margin-bottom: -50px; margin-top: -20pt; margin-left: -40pt;"/>
-						<h3 class="fragment fade-up" data-fragment-index="1" style="font-family: 'write me a song'; font-weight: bold;">
-							POST-QUANTUM
+						<h3 style="margin: 30pt; color:#0042b3; font-weight: bold;">
+							What's the current problem?
+						</h3>
+						<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
+							Refresh protocol exploits ability of <strong>Ed25519</strong> keys to do <strong>Curve25519 ECDH</strong>
 						</h4>
-						<h4 class="fragment fade-up" style="font-family: 'write me a song'; font-size: 40pt; font-weight: normal;">
-							The refresh relies on <strong>properties</strong> </br> that are <strong>unique</strong> to <strong>classic</strong> crypto</br>
+						<h4 class="fragment fade-up box" style="background:#0042b341; margin-left: 150pt; margin-right: 150pt; font-weight: normal;">
+							Not available in PQ
 						</h4>
-						<h4 class="fragment fade-up box" style="color:#0042b3; font-family: 'write me a song'; font-size: 40pt; font-weight: normal;">
-							The <strong>refresh protocol</strong> had be changed
+						<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
+							... But we need to keep <strong>signatures</strong>
 						</h4>
 					</div>
 				</section>
-				<section id="the-end" data-background="white" data-auto-animate>
+				<section data-background="white">
 					<div class="v-stack">
-						<h2 data-id="end" style="color:#0042b3; font-weight: bold;">
-							The End
-						</h2>
+						<h3 style="margin: 30pt; color:#0042b3; font-weight: bold;">
+							The idea
+						</h3>
+						<div style="width:100%; display:flex; justify-content:center;">
+							<div class="r-stack fragment fade" style="width:100%;">
+								<div id="pq-idea" style="width:100%;"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-background="white">
+					<div class="v-stack">
+						<h3 style="margin: 30pt; color:#0042b3; font-weight: bold;">
+							Is this all..?
+						</h3>
+						<p class="fragment fade-up" style="background-color: #0042b341; padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be always able to generate this signature</p>
+						<div style="width:100%; display:flex; justify-content:center;">
+							<div id="rand" style="width:100%;"></div>
+						</div>
+					</div>
+				</section>
+				<section data-background="white" data-auto-animate>
+					<div class="v-stack">
+						<h3 style="display: flex; align-items: center; justify-content: center;">
+							<div data-id="tus" style="color:#0042b3; font-weight: bold;  white-space: nowrap;">
+								t-unique signatures
+							</div>
+						</h3>
+						<p class="fragment fade-up" style="background-color: #0042b341; padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">
+							The set of possible valid signatures for a fixed message-pk pair is bound by some constant t</p>
+						<div style="width:100%; display:flex; justify-content:center;">
+							<div id="tsig" style="width:80%;"></div>
+						</div>
+					</div>
+				</section>
+				<section data-background="white" data-auto-animate>
+					<div class="v-stack">
+						<h3 style="display: flex; align-items: center; justify-content: center; margin-bottom: 20pt;">
+							<div style="color:#0042b3; font-weight: bold; font-size: 36pt;">
+								Post-quantum &nbsp;
+							</div>
+							<div data-id="tus" style="color:#0042b3; font-weight: bold; font-size: 36pt;  white-space: nowrap;">
+								t-unique signatures
+							</div>
+							<div style="color:#0042b3; font-weight: bold; font-size: 36pt;">
+								?
+							</div>
+						</h3>
+					</div>
+					<a class="fragment fade" href="https://eprint.iacr.org/2011/484" style="font-weight: bold;">
+						XMSS!
+					</a>
+					<img class="fragment fade" src="assets/xmss.png" style="height: 100%; background: transparent"/>
+				</section>
+				<section data-background="white">
+					<div class="v-stack">
+						<h3 style="margin: 30pt; font-weight: normal;">
+							The owner of the coin can <strong>always</strong> produce <strong>all signatures</strong> on the public message
+						</h3>
+					</div>
+				</section>
+				<section data-background="white" data-transition="slide">
+					<div class="v-stack">
+						<h3 style="margin: 40pt; color:#0042b3; font-weight: bold;">
+							New Refresh Derive
+						</h3>
+						<div style="width:100%; display:flex; justify-content:center;">
+							<div id="new-rd" style="width:80%;"></div>
+						</div>
+					</div>
+				</section>
+				<section data-background="white" data-transition="slide">
+					<div class="v-stack">
+						<h3 style="margin: 40pt; color:#0042b3; font-weight: bold;">
+							And in cut-and-choose?
+						</h3>
+						<h4 style="margin: 20pt; font-weight: bold;">
+							How does the Exchange verify the open commitments?
+						</h4>
+						<h4 class="fragment fade" style="font-weight: normal;">
+							Customer <strong style="color:#0042b3;">reveals</strong> the signatures
+						</h4>
+						<h4 class="fragment fade" style="font-weight: normal;">
+							Exchange <strong style="color:#0042b3;">verifies</strong>  the signatures
+						</h4>
+					</div>
+				</section>
+				<section data-background="white" data-transition="slide">
+					<div class="v-stack">
+						<h3 style="font-weight: normal;">
+							The new protocol uses <strong>signatures</strong> as <strong>private information</strong>!
+						</h3>
 					</div>
 				</section>
 				<section id="the-end-recap" data-background="white" data-auto-animate>

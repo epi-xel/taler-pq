@@ -12,7 +12,17 @@ svgs = ['coin-struc',
         'withdraw1',
         'withdraw2',
         'withdraw3',
-        'diagram'
+        'diagram',
+        'bs', 
+        'bs-taler', 
+        'refresh-prot',
+        'refresh-derive',
+        'pq-idea', // note: this file contains HTML and it doesn't render alone as SVG
+        'rand',
+        'tsig',
+        'new-rd',
+        'reveal-ex',
+        'recap'
         ]
 
 function loadSVGs() {
