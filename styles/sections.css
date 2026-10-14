@@ -1,0 +1,41 @@
+/* ==========================================================================
+ *  sections.css  —  SHARED styling for the HTML section partials
+ * ==========================================================================
+ *  Styling that recurs across sections/*.html, kept here to avoid repeating it
+ *  inline. Colours are --taler-* vars from theme.js (no hex here, except the
+ *  fixed white on dark/stripe slides), so light/dark switching repaints these.
+ *  Scoped under .reveal to out-specify reveal's own h1..h6 rules (theme.css).
+ * ========================================================================== */
+
+/* Brand-blue bold heading on the slide background. */
+.reveal .taler-title { color: var(--taler-blue); font-weight: bold; }
+
+/* White bold heading on the gradient stripe / black slides (theme-independent). */
+.reveal .stripe-title { color: white; font-weight: bold; }
+
+/* White text on the title gradient. */
+.reveal .on-dark { color: white; }
+
+.reveal .bold { font-weight: bold; }
+.reveal .taler-blue { color: var(--taler-blue); }
+
+/* Translucent blue pill / growing panel behind diagrams. */
+.taler-tint { background-color: var(--taler-tint); }
+
+/* Rounded pill padding (change requirements, "Not available in PQ"). */
+.box {
+	padding: 10pt;
+	border-radius: 30pt;
+	transition: filter 0.4s ease, opacity 0.3s;
+}
+
+/* Step-by-step diagram under a heading (blind signatures, withdrawing). */
+.svg-step {
+	flex: 1; max-width: 100%; max-height: 100%; display: block; margin-top: 60pt;
+}
+
+/* Money-laundering diagrams, offset over their tinted panel. Scoped to beat
+   reveal's `.r-stack > * { margin: auto }`. */
+.reveal .r-stack > .svg-cheat {
+	z-index: 1; margin-left: 150pt; width: 500pt; max-width: 100%; max-height: 100%; display: block;
+}

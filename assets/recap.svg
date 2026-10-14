@@ -43,7 +43,7 @@
       }
 
       .cls-12, .cls-23, .cls-24, .cls-25 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .cls-12, .cls-22 {
@@ -79,7 +79,7 @@
       }
 
       .cls-13, .cls-14, .cls-18, .cls-19 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .cls-14, .cls-16 {
@@ -179,7 +179,7 @@
       }
 
       .cls-54, .cls-55, .cls-56, .cls-57, .cls-19, .cls-11, .cls-58, .cls-59 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-54, .cls-55, .cls-9, .cls-24, .cls-58, .cls-59 {
@@ -264,7 +264,7 @@
       }
 
       .cls-77 {
-        fill: #c6d6ee;
+        fill: var(--diagram-panel, #c6d6ee);
       }
 
       .cls-78 {
@@ -370,7 +370,7 @@
       }
 
       .cls-20 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .cls-100 {
@@ -398,7 +398,7 @@
       }
 
       .cls-21, .cls-32 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .cls-24 {

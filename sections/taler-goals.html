@@ -1,0 +1,53 @@
+<!-- Asymmetric privacy and Taler's three goals, on the gradient-stripe
+     background. Icons are <img data-themed> so svg.js can recolour them in dark. -->
+<section id="asymmetric-privacy" data-background-iframe="assets/section.html" data-transition="slide">
+	<div class="fragment fade-up">
+		<h2 class="taler-title" style="margin-bottom:-10px;">
+		Customer
+		</h2>
+		<img data-themed src="assets/incognito.svg" height="5%" style="margin-bottom: 8%"/>
+	</div>
+	<h2 class="stripe-title" style="margin:0;">
+		Asymmetric privacy
+	</h2>
+	<div class="fragment fade-down">
+		<img data-themed src="assets/surveillance.svg" height="5%" style="margin-top: 8%"/>
+		<h2 class="taler-title" style="margin-top:-10px;">
+		Merchant
+		</h2>
+	</div>
+</section>
+<section id="taler-goals" data-background-iframe="assets/section.html" data-transition="slide">
+	<style>
+		#taler-goals .goal-tile {
+			background: var(--taler-tile); width: 130px; height: 130px; border-radius: 30%;
+			display: flex; align-items: center; justify-content: center;
+		}
+		#taler-goals .goal {
+			display: flex; flex-direction: column; align-items: center; text-align: center;
+		}
+		#taler-goals h5 { font-weight: normal; width: 300px; }
+	</style>
+	<div class="r-stack" style="margin-bottom: 90px; height: 200px;">
+		<img data-themed src="assets/taler-deco.svg" style="margin-left: 380px; height: 150px; background: transparent;"/>
+		<h3 class="taler-title" style="margin-left: 500px; margin-bottom: 70px;">
+			Taler's goals
+		</h3>
+	</div>
+	<div style="margin:0; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 230px;">
+		<div class="fragment fade-up v-stack goal" data-fragment-index="1">
+			<div class="goal-tile"><img data-themed src="assets/incognito.svg" style="height: 70%;"/></div>
+		</div>
+		<div class="fragment fade-up v-stack goal" data-fragment-index="2">
+			<div class="goal-tile"><img data-themed src="assets/tax.svg" style="height: 70%;"/></div>
+		</div>
+		<div class="fragment fade-up v-stack goal" data-fragment-index="3" style="height: 200px;">
+			<div class="goal-tile"><img data-themed src="assets/aml.svg" style="height: 70%;"/></div>
+		</div>
+	</div>
+	<div style="height: 200px; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 60px;">
+		<h5 class="fragment fade-up" data-fragment-index="1">Customer's <strong>anonymity</strong></h5>
+		<h5 class="fragment fade-up" data-fragment-index="2">Identified merchants (easily <strong>taxable</strong>)</h5>
+		<h5 class="fragment fade-up" data-fragment-index="3"><strong>Anti-money laundering</strong> (AML)</h5>
+	</div>
+</section>

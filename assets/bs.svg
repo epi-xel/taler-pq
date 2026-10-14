@@ -15,11 +15,11 @@
       }
 
       .bs-cls-4 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .bs-cls-5, .bs-cls-6 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .bs-cls-7 {
@@ -35,7 +35,7 @@
       }
 
       .bs-cls-10, .bs-cls-11 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .bs-cls-12 {

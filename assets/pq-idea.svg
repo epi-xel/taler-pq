@@ -23,7 +23,7 @@
       }
 
       .pq-cls-5, .pq-cls-13 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .pq-cls-5, .pq-cls-12 {
@@ -47,7 +47,7 @@
       }
 
       .pq-cls-6, .pq-cls-7, .pq-cls-10 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .pq-cls-7, .pq-cls-9 {
@@ -83,7 +83,7 @@
       }
 
       .pq-cls-23, .pq-cls-10, .pq-cls-4, .pq-cls-24 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .pq-cls-25 {
@@ -119,7 +119,7 @@
       }
 
       .pq-cls-11 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .pq-cls-32 {
@@ -414,6 +414,6 @@
   </g>
 </svg>
 <div class="v-stack" style="width: 400pt; position: absolute; right: 10pt; bottom: 10pt">
-  <p class="fragment fade" style="background-color: #0042b341; padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;"><strong>Only owner</strong> can generate this signature</p>
-  <p class="fragment fade" style="background-color: #0042b341; padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be <strong>always</strong> able to generate this signature</p>
+  <p class="fragment fade" style="background-color: var(--diagram-tint, #0042b341); padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;"><strong>Only owner</strong> can generate this signature</p>
+  <p class="fragment fade" style="background-color: var(--diagram-tint, #0042b341); padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be <strong>always</strong> able to generate this signature</p>
 </div>

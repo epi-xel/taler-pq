@@ -3,11 +3,11 @@
   <defs>
     <style>
       .cls-1, .cls-2 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-1, .cls-3 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-miterlimit: 10;
         stroke-width: 200px;
       }

@@ -31,7 +31,7 @@
       }
 
       .coin-struc-cls-8, .coin-struc-cls-9, .coin-struc-cls-10 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .coin-struc-cls-8, .coin-struc-cls-9, .coin-struc-cls-10, .coin-struc-cls-11, .coin-struc-cls-12 {
@@ -51,7 +51,7 @@
       }
 
       .coin-struc-cls-15, .coin-struc-cls-16, .coin-struc-cls-17, .coin-struc-cls-9, .coin-struc-cls-18 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .coin-struc-cls-15, .coin-struc-cls-17, .coin-struc-cls-19 {
@@ -92,7 +92,7 @@
       }
 
       .coin-struc-cls-28, .coin-struc-cls-10, .coin-struc-cls-29 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .coin-struc-cls-30 {
@@ -192,7 +192,7 @@
       }
 
       .coin-struc-cls-11 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .coin-struc-cls-18 {
@@ -216,7 +216,7 @@
       }
 
       .coin-struc-cls-13 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-linecap: square;
         stroke-width: 2.3px;
       }

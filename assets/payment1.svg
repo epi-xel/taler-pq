@@ -15,7 +15,7 @@
       }
 
       .pay-cls-7 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-7, .pay-cls-8, .pay-cls-9, .pay-cls-10 {
@@ -44,11 +44,11 @@
       }
 
       .pay-cls-16 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-17 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .pay-cls-18 {
@@ -76,7 +76,7 @@
       }
 
       .pay-cls-22, .pay-cls-23, .pay-cls-24, .pay-cls-25 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-26 {
@@ -136,7 +136,7 @@
       }
 
       .pay-cls-8 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .pay-cls-24 {
@@ -161,7 +161,7 @@
       }
 
       .pay-cls-9, .pay-cls-11 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-42 {

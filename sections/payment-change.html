@@ -1,0 +1,116 @@
+<!-- Payment and change, the money-laundering problem, and the change
+     requirements. Tinted panels (data-id bg-an / bg-cheat) grow between
+     slides via auto-animate. -->
+<section id="payment-and-change" data-background-iframe="assets/section.html" data-auto-animate data-transition="slide">
+	<h2 data-id="pay-change" class="stripe-title">
+		Payment and Change
+	</h2>
+</section>
+<section id="payment-change-1" data-background="var(--taler-bg)" data-auto-animate>
+	<h2 data-id="pay-change" class="taler-title" style="font-size: 36pt">
+		Payment and Change
+	</h2>
+	<div class="r-stack">
+		<div data-id="bg-an" class="fragment fade taler-tint" data-fragment-index="1" style="margin-right: 80px; margin-top:140px; border-radius: 30px; width: 520px; height: 200px;"> </div>
+		<div style="width:100%; display:flex; align-items: center; justify-content: center;">
+			<div data-id="payment" class="fragment fade" data-fragment-index="0" id="payment1" style="width:90%;"></div>
+		</div>
+	</div>
+</section>
+<section id="payment-change-2" data-background="var(--taler-bg)" data-auto-animate>
+	<h2 data-id="pay-change" class="taler-title" style="font-size: 36pt">
+		Payment and Change
+	</h2>
+	<div class="r-stack">
+		<div data-id="bg-an" class="taler-tint" style="margin-right: 80px; margin-top:140px; border-radius: 30px; width: 520px; height: 480px;"> </div>
+		<div style="width:100%; display:flex; align-items: center; justify-content: center;">
+			<div data-id="payment" id="payment2" style="width:90%;"></div>
+		</div>
+	</div>
+</section>
+<section id="change-requirements" data-background="var(--taler-bg)">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 30pt;">
+			Change requirements
+		</h3>
+		<div class="fragment fade-down" style="margin: 0 350px 0 350px;">
+			<h4> <strong>Anonymity</strong> </h4>
+			<h6 class="taler-tint" style="padding: 10pt; border-radius: 30pt; font-weight: normal;"> Spent coins and change must be <strong>unrelated</strong> </h6>
+		</div>
+		<div class="fragment fade-down" style="margin: 30px 350px 0 350px;">
+			<h4> <strong>Anti-money laundering</strong> </h4>
+			<h6 class="taler-tint" style="padding: 10pt; border-radius: 30pt; font-weight: normal;">Change <strong>ownership</strong> cannot be transferred </h6>
+		</div>
+	</div>
+</section>
+<section id="money-laundering-1" data-background="var(--taler-bg)" data-auto-animate>
+	<div class="v-stack" style="width:100%; align-items: center; justify-content: center;">
+		<h3 style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
+			<div data-id="mlt" class="taler-title">
+				Money-laundering in Taler
+			</div>
+			<div data-id="quest" class="taler-title">
+				?
+			</div>
+		</h3>
+		<div class="r-stack" style="width:100%; align-items: center; justify-content: center;">
+			<div data-id="bg-cheat" class="taler-tint" style="width: 430pt; height: 170pt; margin-left: 130pt; margin-top:5pt; border-radius: 30pt;"></div>
+			<div id="cheat1" class="svg-cheat"></div>
+		</div>
+	</div>
+</section>
+<section id="money-laundering-2" data-background="var(--taler-bg)" data-auto-animate>
+	<div class="v-stack" style="width:100%; align-items: center; justify-content: center;">
+		<h3 style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
+			<div data-id="mlt" class="taler-title">
+				Money-laundering in Taler
+			</div>
+			<div data-id="quest" class="taler-title">
+				?
+			</div>
+		</h3>
+		<div class="r-stack" style="width:100%; align-items: center; justify-content: center;">
+			<div data-id="bg-cheat" class="taler-tint" style="width: 430pt; height: 400pt; margin-top:0pt; margin-left: 130pt; border-radius: 30pt;"></div>
+			<div id="cheat2" class="svg-cheat"></div>
+		</div>
+	</div>
+</section>
+<section id="fixing-money-laundering" data-background="var(--taler-bg)" data-auto-animate>
+	<div class="v-stack" style="width:100%; align-items: center; justify-content: center;">
+		<h3 style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
+			<div class="taler-title">
+				Fixing
+			</div>
+			<div data-id="mlt" class="taler-title">
+				Money-laundering in Taler
+			</div>
+		</h3>
+		<div class="r-stack" style="width:100%; align-items: center; justify-content: center;">
+			<div data-id="bg-cheat" class="taler-tint" style="width: 430pt; height: 430pt; margin-left: 130pt; margin-bottom:10pt; border-radius: 30pt;"></div>
+			<div id="cheat3" class="svg-cheat"></div>
+		</div>
+	</div>
+</section>
+<section id="change-requirements-2" data-background="var(--taler-bg)">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 30pt;">
+			Change requirements (part 2)
+		</h3>
+		<div id="anon-block" style="margin: 0 200px 0 200px;" class="fragment" data-fragment-index="1">
+			<h4><strong>Anonymity</strong></h4>
+			<div class="r-stack">
+				<h6 class="box taler-tint" style="font-weight: normal;">
+					<strong>No one</strong> (except coin's owner) can <strong>correlate</strong> spent coins and change
+				</h6>
+			</div>
+		</div>
+		<div id="aml-block" style="margin: 30px 200px 0 200px;" class="fragment" data-fragment-index="2">
+			<h4><strong>Anti-money laundering</strong></h4>
+			<div class="r-stack">
+				<h6 class="box taler-tint" style="font-weight: normal;">
+					An owner can always <strong>re-obtain change</strong> from their coins
+				</h6>
+			</div>
+		</div>
+	</div>
+</section>

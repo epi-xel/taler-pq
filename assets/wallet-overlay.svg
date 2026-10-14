@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
     </style>
   </defs>

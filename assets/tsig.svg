@@ -11,7 +11,7 @@
       }
 
       .tsig-cls-1, .tsig-cls-6 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .tsig-cls-1, .tsig-cls-5 {
@@ -23,7 +23,7 @@
       }
 
       .tsig-cls-2, .tsig-cls-3, .tsig-cls-4 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .tsig-cls-2, .tsig-cls-3, .tsig-cls-5, .tsig-cls-8 {
@@ -39,7 +39,7 @@
       }
 
       .tsig-cls-11, .tsig-cls-12, .tsig-cls-4 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .tsig-cls-13 {
@@ -85,7 +85,7 @@
       }
 
       .tsig-cls-8 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-linecap: square;
         stroke-width: 2.3px;
       }

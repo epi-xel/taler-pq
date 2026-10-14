@@ -15,7 +15,7 @@
       }
 
       .bst-cls-1, .bst-cls-8, .bst-cls-9, .bst-cls-5, .bst-cls-10 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .bst-cls-11 {
@@ -23,7 +23,7 @@
       }
 
       .bst-cls-2, .bst-cls-3, .bst-cls-4, .bst-cls-5, .bst-cls-7 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .bst-cls-2, .bst-cls-3, .bst-cls-6, .bst-cls-7, .bst-cls-12 {
@@ -39,7 +39,7 @@
       }
 
       .bst-cls-13, .bst-cls-14, .bst-cls-4, .bst-cls-15 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .bst-cls-13, .bst-cls-15 {
@@ -93,7 +93,7 @@
       }
 
       .bst-cls-26 {
-        fill: #c6d6ee;
+        fill: var(--diagram-panel, #c6d6ee);
       }
 
       .bst-cls-27 {
@@ -125,7 +125,7 @@
       }
 
       .bst-cls-6 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .bst-cls-32 {
@@ -157,7 +157,7 @@
       }
 
       .bst-cls-12 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-linecap: square;
         stroke-width: 2.3px;
       }

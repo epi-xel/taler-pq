@@ -1,0 +1,20 @@
+/* ==========================================================================
+ *  document.css  —  dark-mode fixes for content that can't read CSS vars
+ * ==========================================================================
+ *  Raster images, QR codes and unfilled SVG text have fixed colours; these
+ *  rules keep them readable when <html data-theme="dark"> (set by theme.js).
+ *  Palette lives in theme.js.
+ * ========================================================================== */
+
+/* Fixed-colour images (QR codes, black line art like xmss.png): keep them on a
+   white backing in dark so they stay readable/scannable. */
+:root[data-theme="dark"] .keep-light {
+	background: #fff !important;
+	border-radius: 12px;
+}
+
+/* SVG text/shapes with no fill default to black: lift them in dark. Light mode
+   keeps the browser default, so the source files render untouched. */
+:root[data-theme="dark"] .reveal svg {
+	fill: var(--diagram-text);
+}

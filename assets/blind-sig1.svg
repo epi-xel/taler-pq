@@ -11,15 +11,15 @@
       }
 
       .cls-blindsig-3 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-blindsig-4, .cls-blindsig-5 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .cls-blindsig-6, .cls-blindsig-7 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-blindsig-8 {
@@ -44,7 +44,7 @@
 
       .cls-blindsig-12 {
         fill: none;
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-miterlimit: 10;
         stroke-width: 4px;
       }

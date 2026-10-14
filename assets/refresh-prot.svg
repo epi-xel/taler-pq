@@ -11,7 +11,7 @@
       }
 
       .cac-cls-3 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-width: 3px;
       }
 
@@ -28,7 +28,7 @@
       }
 
       .cac-cls-8, .cac-cls-9 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .cac-cls-10 {
@@ -48,7 +48,7 @@
       }
 
       .cac-cls-14, .cac-cls-15 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cac-cls-16 {
@@ -64,7 +64,7 @@
       }
 
       .cac-cls-19 {
-        fill: #c6d6ee;
+        fill: var(--diagram-panel, #c6d6ee);
       }
 
       .cac-cls-20 {
@@ -100,7 +100,7 @@
       }
 
       .cac-cls-4 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .cac-cls-4, .cac-cls-5 {
@@ -112,7 +112,7 @@
       }
 
       .cac-cls-5, .cac-cls-6 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .cac-cls-29 {

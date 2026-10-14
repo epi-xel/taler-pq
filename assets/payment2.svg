@@ -15,7 +15,7 @@
       }
 
       .pay-cls-7 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-7, .pay-cls-8, .pay-cls-9, .pay-cls-10 {
@@ -44,11 +44,11 @@
       }
 
       .pay-cls-16 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-17 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .pay-cls-18 {
@@ -76,7 +76,7 @@
       }
 
       .pay-cls-22, .pay-cls-23, .pay-cls-24, .pay-cls-25 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-26 {
@@ -136,7 +136,7 @@
       }
 
       .pay-cls-8 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .pay-cls-24 {
@@ -161,7 +161,7 @@
       }
 
       .pay-cls-9, .pay-cls-11 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .pay-cls-42 {
@@ -510,7 +510,7 @@
     </g>
   </g>
 </svg>
-<div class="fragment fade" style="position: absolute; top: 0; left: 0; background-color: white; width: 150%; height: 100%; opacity: 0.8;"></div>
+<div class="fragment fade" style="position: absolute; top: 0; left: 0; background-color: var(--diagram-bg, white); width: 150%; height: 100%; opacity: 0.8;"></div>
   <h4 class="fragment fade" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; text-align: center; font-weight: normal">
     The <strong>ownership</strong> of a coin </br> is <strong>never transferred</strong>
   </h4>

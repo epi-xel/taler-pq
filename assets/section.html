@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- Section-divider background (used via data-background-iframe): a blue→black
+     stripe across the middle of the slide. The page colour follows the deck's
+     theme (--taler-bg, read from the parent document); the stripe is fixed. -->
 <html>
 <head>
 <style>
@@ -33,6 +36,12 @@ html, body {
 <body>
 	<div class="stripe"></div>
 	<script>
+	// Same-origin iframe: inherit the deck's slide background (light/dark).
+	try {
+		const bg = getComputedStyle(parent.document.documentElement).getPropertyValue('--taler-bg').trim();
+		if (bg) document.documentElement.style.background = document.body.style.background = bg;
+	} catch (e) { /* opened standalone or cross-origin: keep white */ }
+
 	window.addEventListener('revealready', () => {
 		document.querySelector('.stripe').classList.add('animate');
 	});

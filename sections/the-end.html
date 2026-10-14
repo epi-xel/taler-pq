@@ -1,0 +1,50 @@
+<!-- Closing recap: thumbnails of the main diagrams plus two QR links.
+     Thumbnails are <img data-themed> (svg.js recolours them in dark); QR codes
+     get a white backing in dark mode (.keep-light) so they stay scannable. -->
+<section id="the-end-recap" data-background="var(--taler-bg)" data-auto-animate>
+	<style>
+		#the-end-recap .recap-frame {
+			border: 2px solid var(--taler-blue); border-radius: 20px;
+			display: flex; align-items: center; justify-content: center; overflow: hidden;
+		}
+		#the-end-recap .recap-frame img {
+			height: 100%; width: 100%; object-fit: contain; background: transparent;
+		}
+		#the-end-recap h5 { font-size: 20pt; margin: 0; line-height: 1.1; text-align: center; }
+		#the-end-recap .qr { height: 200px; margin: 0; }
+	</style>
+	<div class="v-stack">
+		<h2 data-id="end" class="taler-title">
+			The End
+		</h2>
+	</div>
+	<div style="display:flex; align-items:flex-start; gap: 10px; justify-content:center;">
+		<div class="v-stack" style="width:650px; justify-content:center;">
+			<div class="recap-frame" style="margin-bottom: 10px; height: 400px;">
+				<img data-themed src="assets/diagram-recap.svg"/>
+			</div>
+			<div style="display:flex; align-items:center; gap: 10px;">
+				<div class="recap-frame" style="height: 200px;">
+					<img data-themed src="assets/coin-struc.svg"/>
+				</div>
+				<div class="recap-frame" style="height: 200px; width: 200px;">
+					<img data-themed src="assets/cheat-recap.svg"/>
+				</div>
+			</div>
+		</div>
+		<div class="v-stack" style="display:flex; flex-direction:column; align-items:center; gap: 10px; margin-top: 20px; width: 220px; flex: 0 0 220px;">
+			<h5>
+				<a href="https://www.taler.net/en/index.html">
+					More about Taler?
+				</a>
+			</h5>
+			<img class="qr keep-light" src="assets/qr-taler.svg"/>
+			<h5>
+				<a href="https://e.pioldi.net/taler-presentation/#/6/1">
+					More on the crypto behind the refresh?
+				</a>
+			</h5>
+			<img class="qr keep-light" src="assets/qr-refresh.svg"/>
+		</div>
+	</div>
+</section>

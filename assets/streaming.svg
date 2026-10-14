@@ -11,7 +11,7 @@
       }
 
       .cls-streaming-3 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .cls-streaming-3, .cls-streaming-4 {
@@ -44,7 +44,7 @@
       }
 
       .cls-streaming-11 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .cls-streaming-12 {
@@ -60,7 +60,7 @@
       }
 
       .cls-streaming-17, .cls-streaming-13, .cls-streaming-18, .cls-streaming-19, .cls-streaming-14, .cls-streaming-15 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-streaming-20 {
@@ -104,7 +104,7 @@
       }
 
       .cls-streaming-4 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .cls-streaming-29 {
@@ -132,7 +132,7 @@
       }
 
       .cls-streaming-5 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-linecap: square;
         stroke-width: 2.3px;
       }

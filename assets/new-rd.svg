@@ -23,7 +23,7 @@
       }
 
       .nrd-cls-5, .nrd-cls-13, .nrd-cls-14 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .nrd-cls-5, .nrd-cls-12 {
@@ -51,7 +51,7 @@
       }
 
       .nrd-cls-6, .nrd-cls-7, .nrd-cls-10 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .nrd-cls-7, .nrd-cls-9 {
@@ -91,7 +91,7 @@
       }
 
       .nrd-cls-26, .nrd-cls-10, .nrd-cls-4, .nrd-cls-27 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .nrd-cls-28 {
@@ -127,7 +127,7 @@
       }
 
       .nrd-cls-11 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .nrd-cls-35 {

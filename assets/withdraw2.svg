@@ -9,7 +9,7 @@
       }
 
       .cls-withdraw-1, .cls-withdraw-2, .cls-withdraw-3, .cls-withdraw-4, .cls-withdraw-5, .cls-withdraw-6 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .cls-withdraw-7 {
@@ -21,7 +21,7 @@
       }
 
       .cls-withdraw-9 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-withdraw-3, .cls-withdraw-10, .cls-withdraw-11, .cls-withdraw-12, .cls-withdraw-4, .cls-withdraw-13, .cls-withdraw-14, .cls-withdraw-5 {
@@ -33,7 +33,7 @@
       }
 
       .cls-withdraw-10 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .cls-withdraw-10, .cls-withdraw-11, .cls-withdraw-13, .cls-withdraw-14 {
@@ -45,7 +45,7 @@
       }
 
       .cls-withdraw-16, .cls-withdraw-12 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-withdraw-17 {
@@ -61,11 +61,11 @@
       }
 
       .cls-withdraw-11, .cls-withdraw-12, .cls-withdraw-4, .cls-withdraw-14, .cls-withdraw-5 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .cls-withdraw-19 {
-        fill: #c6d6ee;
+        fill: var(--diagram-panel, #c6d6ee);
       }
 
       .cls-withdraw-20 {

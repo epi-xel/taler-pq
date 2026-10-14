@@ -1,0 +1,120 @@
+<!-- Post-quantum refresh: the problem, the idea, t-unique signatures (XMSS),
+     and the new refresh derive. -->
+<section data-background-iframe="assets/section.html" data-transition="slide">
+	<h2 class="stripe-title" style="margin:0;">
+		Post-quantum refresh
+	</h2>
+</section>
+<section data-background="var(--taler-bg)">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 30pt;">
+			What's the current problem?
+		</h3>
+		<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
+			Refresh protocol exploits ability of <strong>Ed25519</strong> keys to do <strong>Curve25519 ECDH</strong>
+		</h4>
+		<h4 class="fragment fade-up box taler-tint" style="margin-left: 150pt; margin-right: 150pt; font-weight: normal;">
+			Not available in PQ
+		</h4>
+		<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
+			... But we need to keep <strong>signatures</strong>
+		</h4>
+	</div>
+</section>
+<section data-background="var(--taler-bg)">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 30pt;">
+			The idea
+		</h3>
+		<div style="width:100%; display:flex; justify-content:center;">
+			<div class="r-stack fragment fade" style="width:100%;">
+				<div id="pq-idea" style="width:73%; margin: 0 auto;"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<section data-background="var(--taler-bg)">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 30pt;">
+			Is this all..?
+		</h3>
+		<p class="fragment fade-up taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be always able to generate this signature</p>
+		<div style="width:100%; display:flex; justify-content:center;">
+			<div id="rand" style="width:100%;"></div>
+		</div>
+	</div>
+</section>
+<section data-background="var(--taler-bg)" data-auto-animate>
+	<div class="v-stack">
+		<h3 style="display: flex; align-items: center; justify-content: center;">
+			<div data-id="tus" class="taler-title" style="white-space: nowrap;">
+				t-unique signatures
+			</div>
+		</h3>
+		<p class="fragment fade-up taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">
+			The set of possible valid signatures for a fixed message-pk pair is bound by some constant t</p>
+		<div style="width:100%; display:flex; justify-content:center;">
+			<div id="tsig" style="width:66%;"></div>
+		</div>
+	</div>
+</section>
+<section data-background="var(--taler-bg)" data-auto-animate>
+	<div class="v-stack">
+		<h3 style="display: flex; align-items: center; justify-content: center; margin-bottom: 20pt;">
+			<div class="taler-title" style="font-size: 36pt;">
+				Post-quantum &nbsp;
+			</div>
+			<div data-id="tus" class="taler-title" style="font-size: 36pt; white-space: nowrap;">
+				t-unique signatures
+			</div>
+			<div class="taler-title" style="font-size: 36pt;">
+				?
+			</div>
+		</h3>
+	</div>
+	<a class="fragment fade bold" href="https://eprint.iacr.org/2011/484">
+		XMSS!
+	</a>
+	<!-- Black line art: white backing in dark mode (styles/document.css). -->
+	<img class="fragment fade keep-light" src="assets/xmss.png" style="height: 100%; background: transparent"/>
+</section>
+<section data-background="var(--taler-bg)">
+	<div class="v-stack">
+		<h3 style="margin: 30pt; font-weight: normal;">
+			The owner of the coin can <strong>always</strong> produce <strong>all signatures</strong> on the public message
+		</h3>
+	</div>
+</section>
+<section data-background="var(--taler-bg)" data-transition="slide">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 40pt;">
+			New Refresh Derive
+		</h3>
+		<div style="width:100%; display:flex; justify-content:center;">
+			<div id="new-rd" style="width:70%;"></div>
+		</div>
+	</div>
+</section>
+<section data-background="var(--taler-bg)" data-transition="slide">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 40pt;">
+			And in cut-and-choose?
+		</h3>
+		<h4 class="bold" style="margin: 20pt;">
+			How does the Exchange verify the open commitments?
+		</h4>
+		<h4 class="fragment fade" style="font-weight: normal;">
+			Customer <strong class="taler-blue">reveals</strong> the signatures
+		</h4>
+		<h4 class="fragment fade" style="font-weight: normal;">
+			Exchange <strong class="taler-blue">verifies</strong>  the signatures
+		</h4>
+	</div>
+</section>
+<section data-background="var(--taler-bg)" data-transition="slide">
+	<div class="v-stack">
+		<h3 style="font-weight: normal;">
+			The new protocol uses <strong>signatures</strong> as <strong>private information</strong>!
+		</h3>
+	</div>
+</section>

@@ -31,7 +31,7 @@
       }
 
       .rd-cls-11, .rd-cls-12 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .rd-cls-11, .rd-cls-12, .rd-cls-13, .rd-cls-14, .rd-cls-15, .rd-cls-16, .rd-cls-17 {
@@ -84,7 +84,7 @@
       }
 
       .rd-cls-26 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .rd-cls-5, .rd-cls-27 {
@@ -104,7 +104,7 @@
       }
 
       .rd-cls-30, .rd-cls-31, .rd-cls-6, .rd-cls-32 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .rd-cls-30, .rd-cls-4, .rd-cls-32 {
@@ -165,7 +165,7 @@
       }
 
       .rd-cls-16 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .rd-cls-44 {

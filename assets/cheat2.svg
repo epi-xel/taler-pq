@@ -19,7 +19,7 @@
       }
 
       .ml-cls-5 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .ml-cls-5, .ml-cls-6, .ml-cls-7 {
@@ -64,7 +64,7 @@
       }
 
       .ml-cls-21 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .ml-cls-22 {
@@ -72,7 +72,7 @@
       }
 
       .ml-cls-22, .ml-cls-23, .ml-cls-16, .ml-cls-24, .ml-cls-19 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .ml-cls-22, .ml-cls-24 {
@@ -145,7 +145,7 @@
       }
 
       .ml-cls-6 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .ml-cls-17 {
@@ -157,7 +157,7 @@
       }
 
       .ml-cls-7, .ml-cls-8 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .ml-cls-18 {

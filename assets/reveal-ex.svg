@@ -7,7 +7,7 @@
       }
 
       .rex-cls-2 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .rex-cls-3 {

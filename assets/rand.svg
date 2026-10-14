@@ -11,7 +11,7 @@
       }
 
       .rand-cls-1, .rand-cls-5 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .rand-cls-1, .rand-cls-4 {
@@ -28,11 +28,11 @@
       }
 
       .rand-cls-6, .rand-cls-7, .rand-cls-3, .rand-cls-8 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .rand-cls-2, .rand-cls-3 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .rand-cls-2, .rand-cls-4, .rand-cls-9 {
@@ -93,7 +93,7 @@
       }
 
       .rand-cls-9 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-linecap: square;
         stroke-width: 2.3px;
       }

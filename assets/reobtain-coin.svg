@@ -39,7 +39,7 @@
       }
 
       .cls-reobtain-8, .cls-reobtain-10, .cls-reobtain-11 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
       }
 
       .cls-reobtain-15 {
@@ -59,7 +59,7 @@
       }
 
       .cls-reobtain-18, .cls-reobtain-11 {
-        fill: #fff;
+        fill: var(--diagram-surface, #fff);
       }
 
       .cls-reobtain-19 {
@@ -67,7 +67,7 @@
       }
 
       .cls-reobtain-20, .cls-reobtain-10, .cls-reobtain-4, .cls-reobtain-21 {
-        fill: #0042b3;
+        fill: var(--diagram-brand, #0042b3);
       }
 
       .cls-reobtain-22 {
@@ -111,7 +111,7 @@
       }
 
       .cls-reobtain-12 {
-        stroke: #fff;
+        stroke: var(--diagram-surface, #fff);
       }
 
       .cls-reobtain-31 {
@@ -135,7 +135,7 @@
       }
 
       .cls-reobtain-14 {
-        stroke: #0042b3;
+        stroke: var(--diagram-brand, #0042b3);
         stroke-linecap: square;
         stroke-width: 2.3px;
       }
