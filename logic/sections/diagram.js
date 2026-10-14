@@ -55,7 +55,7 @@ function resetDiagram() {
 	if (!coin || !anon) return;
 
 	gsap.killTweensOf('*');
-	gsap.set([coin, anon], { x: 0, y: 0 });
+	gsap.set([coin, anon], { x: 0, y: 0, scaleX: 1 });
 	gsap.set(coin, { opacity: 1 });
 	gsap.set(anon, { opacity: 0 });
 	gsap.set('#wallet-overlay', { opacity: 0 });
@@ -98,21 +98,25 @@ async function handleStep(event) {
 		case 'withdraw':
 			await move(anon, 'exchange', 0);
 			await move(coin, 'exchange');
-			await crossfade(coin, anon);
-			await move(anon, 'wallet-group');
+			await flip(coin, anon);
+			await moveIntoWallet(anon);
 			break;
 
 		case 'pay':
-			await move(anon, 'merchant');
+			await moveOntoNode(anon, 'merchant-circle');
 			break;
 
 		case 'deposit':
 			await move(anon, 'exchange');
 			break;
 
+		case 'deanonymize':
+			await move(coin, 'exchange', 0);
+			await flip(anon, coin);
+			break;
+
 		case 'wire-money2':
-			await crossfade(anon, coin);
-			await move(coin, 'bankm');
+			await moveOntoNode(coin, 'bankm-circle');
 			break;
 	}
 }
@@ -141,11 +145,59 @@ function move(el, targetId, duration = 0.8) {
 	});
 }
 
-function crossfade(a, b, duration = 1.5) {
+// Rest a coin on a node's rim, up and to the right (its centre on the circle's
+// circumference), the way the pile perches on the customer's bank at the start.
+// Driven off the node's circle, not its <g>, whose label drags the centre down.
+const COIN_DIR_X = 0.584, COIN_DIR_Y = -0.811;  // unit vector: up and to the right
+function moveOntoNode(el, circleId, duration = 0.8) {
 	return new Promise(res => {
+		const circle = document.getElementById(circleId);
+		if (!circle) return res();
+
+		const c1 = getCenter(el);
+		const c2 = getCenter(circle);
+		const r = circle.getBBox().width / 2;
+
+		gsap.to(el, {
+			duration,
+			x: c2.x + COIN_DIR_X * r - c1.x,
+			y: c2.y + COIN_DIR_Y * r - c1.y,
+			ease: 'power2.inOut',
+			onComplete: res
+		});
+	});
+}
+
+// Move a coin into the wallet, stopping near the top so it peeks out.
+function moveIntoWallet(el, duration = 0.8) {
+	return new Promise(res => {
+		const wallet = document.getElementById('wallet-group');
+		if (!wallet) return res();
+
+		const c1 = getCenter(el);
+		const b = wallet.getBBox();
+
+		gsap.to(el, {
+			duration,
+			x: b.x + b.width / 2 - c1.x,
+			y: b.y + b.height * 0.28 - c1.y,
+			ease: 'power2.inOut',
+			onComplete: res
+		});
+	});
+}
+
+// Flip coin `a` into coin `b`: `a` turns edge-on (scaleX -> 0), then `b`
+// turns back from edge-on to full. Both must already share a position.
+function flip(a, b, duration = 0.8) {
+	return new Promise(res => {
+		gsap.set(b, { opacity: 1, scaleX: 0, transformOrigin: '50% 50%' });
+		gsap.set(a, { transformOrigin: '50% 50%' });
+
 		gsap.timeline({ onComplete: res })
-			.to(a, { opacity: 0, duration }, 0)
-			.to(b, { opacity: 1, duration }, 0);
+			.to(a, { scaleX: 0, duration: duration / 2, ease: 'power1.in' }, 0)
+			.set(a, { opacity: 0 })
+			.to(b, { scaleX: 1, duration: duration / 2, ease: 'power1.out' }, duration / 2);
 	});
 }
 

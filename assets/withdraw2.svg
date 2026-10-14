@@ -182,6 +182,7 @@
   <g id="withdrawjs">
     <g id="blinded" data-id="blinded">
       <g transform="translate(545 0)">
+        <path class="env-paper" style="fill: var(--diagram-paper, none)" d="M439.49,97.67h217.02v147.54h-217.02V97.67Z"/>
         <path class="cls-withdraw-14" d="M439.49,97.67h217.02v147.54h-217.02V97.67ZM439.49,97.67l100.34,97.02c4.57,4.42,11.81,4.42,16.38,0l100.29-97.02M439.49,245.21l76.62-73.46M656.51,245.21l-76.89-73.16"/>
         <g id="sig-on-blinded" class="fragment fade" data-fragment-index="1">
           <g>
@@ -257,11 +258,11 @@
       </g>
     </g>
     <g id="coin" data-id="coin">
-      <rect class="cls-withdraw-19" width="177.77" height="298.46" rx="22.69" ry="22.69"/>
+      <rect class="cls-withdraw-19" style="fill: var(--diagram-wash-blue, var(--diagram-panel, #c6d6ee)); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" width="177.77" height="298.46" rx="22.69" ry="22.69"/>
       <g>
         <g class="cls-withdraw-23">
-          <rect class="cls-withdraw-2" x="16.43" y="94.55" width="141.88" height="186.91" rx="9.91" ry="9.91"/>
-          <rect class="cls-withdraw-11" x="16.43" y="94.55" width="141.88" height="186.91" rx="9.91" ry="9.91"/>
+          <rect class="cls-withdraw-2" style="fill: var(--diagram-card, var(--diagram-surface, #fff))" x="16.43" y="94.55" width="141.88" height="186.91" rx="9.91" ry="9.91"/>
+          <rect class="cls-withdraw-11" style="stroke: var(--diagram-card-border, var(--diagram-brand, #0042b3))" x="16.43" y="94.55" width="141.88" height="186.91" rx="9.91" ry="9.91"/>
         </g>
         <g>
           <ellipse class="cls-withdraw-3" cx="55.93" cy="124.61" rx="21.13" ry="21.31"/>

@@ -1,7 +1,8 @@
 <!-- Payment and change, the money-laundering problem, and the change
      requirements. Tinted panels (data-id bg-an / bg-cheat) grow between
-     slides via auto-animate. -->
-<section id="payment-and-change" data-background-iframe="assets/section.html" data-auto-animate data-transition="slide">
+     slides via auto-animate. Both change-requirements slides share the same
+     stacked two-card layout (.req-card); only the statements differ. -->
+<section id="payment-and-change" data-background-iframe="assets/section.html" data-auto-animate data-auto-animate-restart data-transition="slide">
 	<h2 data-id="pay-change" class="stripe-title">
 		Payment and Change
 	</h2>
@@ -29,23 +30,29 @@
 	</div>
 </section>
 <section id="change-requirements" data-background="var(--taler-bg)">
-	<div class="v-stack">
-		<h3 class="taler-title" style="margin: 30pt;">
-			Change requirements
-		</h3>
-		<div class="fragment fade-down" style="margin: 0 350px 0 350px;">
-			<h4> <strong>Anonymity</strong> </h4>
-			<h6 class="taler-tint" style="padding: 10pt; border-radius: 30pt; font-weight: normal;"> Spent coins and change must be <strong>unrelated</strong> </h6>
+	<h3 class="taler-title" style="margin: 30pt;">
+		Change requirements
+	</h3>
+	<div class="card-grid req-grid">
+		<div class="taler-card req-card fragment fade-down">
+			<div class="req-icon"><img data-themed src="assets/incognito.svg"/></div>
+			<div class="req-body">
+				<h4 class="taler-title req-title">Anonymity</h4>
+				<p class="req-text">Spent coins and change must be <strong>unrelated</strong></p>
+			</div>
 		</div>
-		<div class="fragment fade-down" style="margin: 30px 350px 0 350px;">
-			<h4> <strong>Anti-money laundering</strong> </h4>
-			<h6 class="taler-tint" style="padding: 10pt; border-radius: 30pt; font-weight: normal;">Change <strong>ownership</strong> cannot be transferred </h6>
+		<div class="taler-card req-card fragment fade-down">
+			<div class="req-icon"><img data-themed src="assets/aml.svg"/></div>
+			<div class="req-body">
+				<h4 class="taler-title req-title">Anti-money laundering</h4>
+				<p class="req-text">Change <strong>ownership</strong> cannot be transferred</p>
+			</div>
 		</div>
 	</div>
 </section>
 <section id="money-laundering-1" data-background="var(--taler-bg)" data-auto-animate>
 	<div class="v-stack" style="width:100%; align-items: center; justify-content: center;">
-		<h3 style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
+		<h3 class="split-title" style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
 			<div data-id="mlt" class="taler-title">
 				Money-laundering in Taler
 			</div>
@@ -61,7 +68,7 @@
 </section>
 <section id="money-laundering-2" data-background="var(--taler-bg)" data-auto-animate>
 	<div class="v-stack" style="width:100%; align-items: center; justify-content: center;">
-		<h3 style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
+		<h3 class="split-title" style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
 			<div data-id="mlt" class="taler-title">
 				Money-laundering in Taler
 			</div>
@@ -77,7 +84,7 @@
 </section>
 <section id="fixing-money-laundering" data-background="var(--taler-bg)" data-auto-animate>
 	<div class="v-stack" style="width:100%; align-items: center; justify-content: center;">
-		<h3 style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
+		<h3 class="split-title" style="display: flex; gap: 15pt; align-items: center; justify-content: center;">
 			<div class="taler-title">
 				Fixing
 			</div>
@@ -92,24 +99,32 @@
 	</div>
 </section>
 <section id="change-requirements-2" data-background="var(--taler-bg)">
-	<div class="v-stack">
-		<h3 class="taler-title" style="margin: 30pt;">
-			Change requirements (part 2)
-		</h3>
-		<div id="anon-block" style="margin: 0 200px 0 200px;" class="fragment" data-fragment-index="1">
-			<h4><strong>Anonymity</strong></h4>
-			<div class="r-stack">
-				<h6 class="box taler-tint" style="font-weight: normal;">
-					<strong>No one</strong> (except coin's owner) can <strong>correlate</strong> spent coins and change
-				</h6>
+	<h3 class="taler-title" style="margin: 30pt;">
+		Change requirements (part 2)
+	</h3>
+	<div class="card-grid req-grid">
+		<div class="taler-card req-card fragment" id="anon-block" data-fragment-index="1">
+			<div class="req-icon"><img data-themed src="assets/incognito.svg"/></div>
+			<div class="req-body">
+				<h4 class="taler-title req-title">Anonymity</h4>
+				<!-- Statement and responsibility share one cell: when the label's
+				     fragment shows, the statement blurs behind it (styles/sections.css). -->
+				<div class="req-stack">
+					<p class="req-text"><strong>No one</strong> (except coin's owner) can <strong>correlate</strong> spent coins and change</p>
+					<p class="req-resp fragment fade-in" data-fragment-index="3">Customer's responsibility</p>
+				</div>
 			</div>
 		</div>
-		<div id="aml-block" style="margin: 30px 200px 0 200px;" class="fragment" data-fragment-index="2">
-			<h4><strong>Anti-money laundering</strong></h4>
-			<div class="r-stack">
-				<h6 class="box taler-tint" style="font-weight: normal;">
-					An owner can always <strong>re-obtain change</strong> from their coins
-				</h6>
+		<div class="taler-card req-card fragment" id="aml-block" data-fragment-index="2">
+			<div class="req-icon"><img data-themed src="assets/aml.svg"/></div>
+			<div class="req-body">
+				<h4 class="taler-title req-title">Anti-money laundering</h4>
+				<!-- Statement and responsibility share one cell: when the label's
+				     fragment shows, the statement blurs behind it (styles/sections.css). -->
+				<div class="req-stack">
+					<p class="req-text">An owner can always <strong><span style="white-space: nowrap;">re-obtain</span> change</strong> from their coins</p>
+					<p class="req-resp fragment fade-in" data-fragment-index="4">Exchange's responsibility</p>
+				</div>
 			</div>
 		</div>
 	</div>

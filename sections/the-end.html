@@ -1,50 +1,77 @@
-<!-- Closing recap: thumbnails of the main diagrams plus two QR links.
-     Thumbnails are <img data-themed> (svg.js recolours them in dark); QR codes
-     get a white backing in dark mode (.keep-light) so they stay scannable. -->
+<!-- Closing recap: the Taler diagram (with the QR link in its corner) and two
+     summary cards.
+     The diagram is inlined by svg.js (#diagram-recap) so it uses the page's
+     Montserrat and theme vars; the QR code is inverted in dark mode
+     (.invert-dark): light modules on the dark slide. -->
 <section id="the-end-recap" data-background="var(--taler-bg)" data-auto-animate>
 	<style>
+		/* stretch: the cards column is as tall as the diagram card; its two cards
+		   share that height. */
+		#the-end-recap .recap-row { display: flex; align-items: stretch; justify-content: center; gap: 30px; }
 		#the-end-recap .recap-frame {
-			border: 2px solid var(--taler-blue); border-radius: 20px;
-			display: flex; align-items: center; justify-content: center; overflow: hidden;
+			position: relative; width: 660px; padding: 60px 10px 10px; box-sizing: border-box;
+			display: flex; align-items: center; justify-content: center;
 		}
-		#the-end-recap .recap-frame img {
-			height: 100%; width: 100%; object-fit: contain; background: transparent;
+		#the-end-recap #diagram-recap { width: 100%; }
+		#the-end-recap .recap-frame svg { display: block; width: 100%; height: auto; }
+		#the-end-recap .recap-side { width: 400px; display: flex; flex-direction: column; gap: 18px; }
+		#the-end-recap .recap-card {
+			flex: 1; padding: 16px 22px; text-align: left;
+			display: flex; flex-direction: column; justify-content: center;
 		}
-		#the-end-recap h5 { font-size: 20pt; margin: 0; line-height: 1.1; text-align: center; }
-		#the-end-recap .qr { height: 200px; margin: 0; }
+		#the-end-recap .recap-card h5 { margin: 0 0 6px; font-size: 20pt; color: var(--taler-blue); }
+		/* Bullet lists with small dots in the theme colour (follows light/dark). */
+		#the-end-recap .recap-card ul { display: block; margin: 0 0 0 1em; font-size: 15pt; line-height: 1.3; }
+		#the-end-recap .recap-card li::marker { color: var(--taler-blue); font-size: 0.7em; }
+		/* QR link in the diagram's empty top-left corner (left of the Auditor). */
+		#the-end-recap .recap-qr {
+			position: absolute; top: 18px; left: 28px;
+			display: flex; align-items: center; gap: 16px;
+		}
+		#the-end-recap .recap-qr h5 { font-size: 18pt; margin: 0; line-height: 1.2; text-align: left; }
+		#the-end-recap .qr { height: 125px; margin: 0; }
 	</style>
 	<div class="v-stack">
-		<h2 data-id="end" class="taler-title">
+		<h2 data-id="end" class="taler-title" style="margin-bottom: 30px;">
 			The End
 		</h2>
 	</div>
-	<div style="display:flex; align-items:flex-start; gap: 10px; justify-content:center;">
-		<div class="v-stack" style="width:650px; justify-content:center;">
-			<div class="recap-frame" style="margin-bottom: 10px; height: 400px;">
-				<img data-themed src="assets/diagram-recap.svg"/>
-			</div>
-			<div style="display:flex; align-items:center; gap: 10px;">
-				<div class="recap-frame" style="height: 200px;">
-					<img data-themed src="assets/coin-struc.svg"/>
-				</div>
-				<div class="recap-frame" style="height: 200px; width: 200px;">
-					<img data-themed src="assets/cheat-recap.svg"/>
-				</div>
+	<div class="recap-row">
+		<div class="taler-card recap-frame">
+			<div id="diagram-recap"></div>
+			<div class="recap-qr">
+				<img class="qr invert-dark" src="assets/qr-taler.svg"/>
+				<h5>
+					<a href="https://www.taler.net/en/index.html">
+						More about Taler?
+					</a>
+				</h5>
 			</div>
 		</div>
-		<div class="v-stack" style="display:flex; flex-direction:column; align-items:center; gap: 10px; margin-top: 20px; width: 220px; flex: 0 0 220px;">
-			<h5>
-				<a href="https://www.taler.net/en/index.html">
-					More about Taler?
-				</a>
-			</h5>
-			<img class="qr keep-light" src="assets/qr-taler.svg"/>
-			<h5>
-				<a href="https://e.pioldi.net/taler-presentation/#/6/1">
-					More on the crypto behind the refresh?
-				</a>
-			</h5>
-			<img class="qr keep-light" src="assets/qr-refresh.svg"/>
+		<div class="recap-side">
+			<div class="taler-card recap-card">
+				<h5>GNU Taler</h5>
+				<ul>
+					<li>Customers' anonymity & AML</li>
+					<li>Coin ownership never transferred</strong></li>
+					
+				</ul>
+			</div>
+			<div class="taler-card recap-card">
+				<h5>Refresh protocol</h5>
+				<ul>
+					<li>An owner can always re-obtain change from their coins</strong></li>
+					<li>Change coin derived deterministically from original coin keys</li>
+					<li>Using ECDH/Ed25519</li>
+				</ul>
+			</div>
+			<div class="taler-card recap-card">
+				<h5>Post-quantum refresh</h5>
+				<ul>
+					<li>No ECDH/Ed25519 in PQ</li>
+					<li>Use of <strong>t&#8209;unique signatures</strong> (XMSS) to derive a new coin </li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<!-- Section-divider background (used via data-background-iframe): a blue→black
-     stripe across the middle of the slide. The page colour follows the deck's
-     theme (--taler-bg, read from the parent document); the stripe is fixed. -->
+<!-- Section-divider background (used via data-background-iframe): a blue→dark
+     stripe across the middle of the slide. The page colour and the stripe's
+     gradient follow the deck's theme (--taler-bg / --taler-stripe-*, read from
+     the parent document). -->
 <html>
 <head>
 <style>
@@ -37,10 +38,18 @@ html, body {
 	<div class="stripe"></div>
 	<script>
 	// Same-origin iframe: inherit the deck's slide background (light/dark).
-	try {
-		const bg = getComputedStyle(parent.document.documentElement).getPropertyValue('--taler-bg').trim();
-		if (bg) document.documentElement.style.background = document.body.style.background = bg;
-	} catch (e) { /* opened standalone or cross-origin: keep white */ }
+	// The deck calls this again after a theme switch (logic/theme-toggle.js).
+	window.applyParentTheme = function () {
+		try {
+			const root = getComputedStyle(parent.document.documentElement);
+			const bg = root.getPropertyValue('--taler-bg').trim();
+			if (bg) document.documentElement.style.background = document.body.style.background = bg;
+			const from = root.getPropertyValue('--taler-stripe-from').trim();
+			const to = root.getPropertyValue('--taler-stripe-to').trim();
+			if (from && to) document.querySelector('.stripe').style.background = 'linear-gradient(to left, ' + from + ', ' + to + ')';
+		} catch (e) { /* opened standalone or cross-origin: keep white */ }
+	};
+	window.applyParentTheme();
 
 	window.addEventListener('revealready', () => {
 		document.querySelector('.stripe').classList.add('animate');

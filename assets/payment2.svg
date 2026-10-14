@@ -97,6 +97,7 @@
 
       .pay-cls-29 {
         opacity: .36;
+        fill: #000; /* shadow stays dark in both themes (no fill would inherit the light dark-mode text colour) */
       }
 
       .pay-cls-30 {
@@ -510,7 +511,7 @@
     </g>
   </g>
 </svg>
-<div class="fragment fade" style="position: absolute; top: 0; left: 0; background-color: var(--diagram-bg, white); width: 150%; height: 100%; opacity: 0.8;"></div>
+<div class="fragment fade" style="position: absolute; top: 0; left: 0; background-color: color-mix(in srgb, var(--diagram-bg, white) 80%, transparent); width: 150%; height: 100%;"></div>
   <h4 class="fragment fade" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; text-align: center; font-weight: normal">
     The <strong>ownership</strong> of a coin </br> is <strong>never transferred</strong>
   </h4>

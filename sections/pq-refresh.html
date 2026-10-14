@@ -13,7 +13,7 @@
 		<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
 			Refresh protocol exploits ability of <strong>Ed25519</strong> keys to do <strong>Curve25519 ECDH</strong>
 		</h4>
-		<h4 class="fragment fade-up box taler-tint" style="margin-left: 150pt; margin-right: 150pt; font-weight: normal;">
+		<h4 class="fragment fade-up taler-tint text-pill" style="font-weight: normal;">
 			Not available in PQ
 		</h4>
 		<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
@@ -21,7 +21,7 @@
 		</h4>
 	</div>
 </section>
-<section data-background="var(--taler-bg)">
+<section data-background="var(--taler-bg)" data-transition="slide-in fade-out">
 	<div class="v-stack">
 		<h3 class="taler-title" style="margin: 30pt;">
 			The idea
@@ -33,12 +33,13 @@
 		</div>
 	</div>
 </section>
-<section data-background="var(--taler-bg)">
+<section data-background="var(--taler-bg)" data-transition="fade-in slide-out">
 	<div class="v-stack">
 		<h3 class="taler-title" style="margin: 30pt;">
 			Is this all..?
 		</h3>
-		<p class="fragment fade-up taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be always able to generate this signature</p>
+		<!-- Morphs from the same pill in assets/pq-idea.svg (logic/sections/pill-morph.js). -->
+		<p data-morph="owner-sig" class="taler-tint text-pill" style="font-weight: normal; font-size: 24pt;">The coin owner must be <strong>always</strong> able to generate this signature</p>
 		<div style="width:100%; display:flex; justify-content:center;">
 			<div id="rand" style="width:100%;"></div>
 		</div>
@@ -46,13 +47,13 @@
 </section>
 <section data-background="var(--taler-bg)" data-auto-animate>
 	<div class="v-stack">
-		<h3 style="display: flex; align-items: center; justify-content: center;">
+		<h3 class="split-title" style="display: flex; align-items: center; justify-content: center;">
 			<div data-id="tus" class="taler-title" style="white-space: nowrap;">
 				t-unique signatures
 			</div>
 		</h3>
-		<p class="fragment fade-up taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">
-			The set of possible valid signatures for a fixed message-pk pair is bound by some constant t</p>
+		<p class="fragment fade-up taler-tint text-pill" style="font-weight: normal; font-size: 24pt;">
+			The set of possible valid signatures for a fixed </br> message-pk pair is bound by some constant t</p>
 		<div style="width:100%; display:flex; justify-content:center;">
 			<div id="tsig" style="width:66%;"></div>
 		</div>
@@ -60,7 +61,7 @@
 </section>
 <section data-background="var(--taler-bg)" data-auto-animate>
 	<div class="v-stack">
-		<h3 style="display: flex; align-items: center; justify-content: center; margin-bottom: 20pt;">
+		<h3 class="split-title" style="display: flex; align-items: center; justify-content: center; margin-bottom: 20pt;">
 			<div class="taler-title" style="font-size: 36pt;">
 				Post-quantum &nbsp;
 			</div>
@@ -76,7 +77,7 @@
 		XMSS!
 	</a>
 	<!-- Black line art: white backing in dark mode (styles/document.css). -->
-	<img class="fragment fade keep-light" src="assets/xmss.png" style="height: 100%; background: transparent"/>
+	<img class="fragment fade paper-dark" src="assets/xmss.png" style="height: 100%; background: transparent"/>
 </section>
 <section data-background="var(--taler-bg)">
 	<div class="v-stack">

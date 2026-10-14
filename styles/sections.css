@@ -7,8 +7,28 @@
  *  Scoped under .reveal to out-specify reveal's own h1..h6 rules (theme.css).
  * ========================================================================== */
 
-/* Brand-blue bold heading on the slide background. */
-.reveal .taler-title { color: var(--taler-blue); font-weight: bold; }
+/* Bold heading on the slide background, painted with the brand text gradient
+   (same look as gnufi-www's headingStyle()). inline-block so the gradient spans
+   the text, not the full slide width. */
+.reveal .taler-title {
+	font-weight: bold; display: inline-block;
+	background: var(--taler-text-gradient);
+	-webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* Heading split into pieces (for auto-animate): every piece paints its slice of
+   one title-wide gradient. --split-w/--split-x are set by
+   logic/sections/split-title.js; before that, each piece falls back to its own. */
+.reveal .split-title > .taler-title {
+	background-size: var(--split-w, 100%) 100%;
+	background-position: var(--split-x, 0) 0;
+	background-repeat: no-repeat;
+}
+
+/* Morphing headings (auto-animate data-id) hug their text, like .taler-title:
+   if one end were a full-width block and the other text-width, reveal would
+   morph the box and the text would drift sideways before moving. */
+.reveal .slides :is(h1, h2, h3, h4, h5, h6)[data-id] { display: inline-block; }
 
 /* White bold heading on the gradient stripe / black slides (theme-independent). */
 .reveal .stripe-title { color: white; font-weight: bold; }
@@ -19,14 +39,20 @@
 .reveal .bold { font-weight: bold; }
 .reveal .taler-blue { color: var(--taler-blue); }
 
-/* Translucent blue pill / growing panel behind diagrams. */
+/* Translucent blue pill / growing panel behind diagrams. In dark it's a card
+   (--taler-tint = card colour): border drawn as an inset shadow so the size
+   doesn't change between themes. */
 .taler-tint { background-color: var(--taler-tint); }
+:root[data-theme="dark"] .taler-tint {
+	box-shadow: inset 0 0 0 1px var(--taler-card-border), 0 8px 24px var(--taler-card-shadow);
+}
 
-/* Rounded pill padding (change requirements, "Not available in PQ"). */
-.box {
-	padding: 10pt;
-	border-radius: 30pt;
-	transition: filter 0.4s ease, opacity 0.3s;
+/* Tinted pill between lines of text: hugs its text (max-content), centred,
+   wrapping only past --pill-max. */
+.reveal .text-pill {
+	width: max-content; max-width: var(--pill-max, 1100px); box-sizing: border-box;
+	margin-left: auto; margin-right: auto;
+	padding: 10pt 24pt; border-radius: 20pt;
 }
 
 /* Step-by-step diagram under a heading (blind signatures, withdrawing). */
@@ -39,3 +65,73 @@
 .reveal .r-stack > .svg-cheat {
 	z-index: 1; margin-left: 150pt; width: 500pt; max-width: 100%; max-height: 100%; display: block;
 }
+
+/* Standard rounded, shadowed card (same look as gnufi-www's .gnufi-card). */
+.taler-card {
+	border: 1px solid var(--taler-card-border); border-radius: 16px;
+	background: var(--taler-card); box-shadow: 0 8px 24px var(--taler-card-shadow);
+}
+
+/* Centered grid of equal fixed-width columns; count/width set per slide via
+   --cols / --col-width. Equal-height rows come from align-items: stretch. */
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--cols, 3), var(--col-width, 270px));
+	justify-content: center;
+	gap: 20px;
+	align-items: stretch;
+	width: 100%;
+}
+
+/* Icon-on-top card internals (Taler's goals). */
+.icon-card {
+	display: flex; flex-direction: column; align-items: center; text-align: center;
+	padding: 20px 24px;
+}
+.icon-card .card-icon { font-size: 40pt; line-height: 1; color: var(--taler-blue); margin-bottom: 12px; }
+.icon-card .card-icon img { height: 64px; margin: 0; }
+/* Icons keep their aspect ratio: opt out of reveal's img max-width: 95%. */
+.reveal .icon-card .card-icon img,
+.reveal .req-card .req-icon img { width: auto; max-width: none; }
+
+/* Change-requirements cards: equal-width rows stacked vertically, icon left,
+   title + statement right. Same min-height on both slides so part 1 and part 2
+   cards match in size. */
+.req-grid { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.req-card {
+	width: 900px; min-height: 175px; box-sizing: border-box;
+	display: flex; align-items: center; gap: 30px; padding: 20px 36px; text-align: left;
+}
+.req-card .req-icon img { height: 80px; margin: 0; display: block; }
+.reveal .req-card .req-title { margin: 0 0 6px; font-size: 28pt; }
+.reveal .req-card .req-text { margin: 0; font-size: 22pt; line-height: 1.3; hyphens: none; }
+
+/* Part 2: the responsibility label fades in over its statement, which blurs
+   while the label is shown (reveal marks shown fragments .visible). */
+.req-stack { display: grid; }
+.req-stack > * { grid-area: 1 / 1; }
+.reveal .req-card .req-text { transition: filter 0.4s ease, opacity 0.3s; }
+.req-stack:has(.req-resp.visible) .req-text { filter: blur(5px); opacity: 0.5; }
+.reveal .req-card .req-resp {
+	margin: 0; align-self: center; text-align: left;
+	font-size: 26pt; font-weight: bold; color: var(--taler-blue);
+}
+/* White in dark (blue would sink into the dark card); light keeps brand blue,
+   since white would vanish on the white card. */
+:root[data-theme="dark"] .reveal .req-card .req-resp { color: #fff; }
+
+/* Frosted-glass panel on photo backgrounds: blur + faint white sheen, no grey
+   tint. Fixed values, not theme vars: the photo is theme-independent.
+   backdrop-filter can't blur while an ancestor is fading (reveal's slide fade),
+   so slides using this panel use data-transition="none" and the panel fades
+   itself in — the blur is there from the first frame. `>` matters: the whole
+   deck is one vertical stack, so the outer <section> is always .present. */
+.photo-panel {
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+.reveal .slides section.present > .photo-panel { animation: photo-panel-in 0.5s ease both; }
+@keyframes photo-panel-in { from { opacity: 0; } to { opacity: 1; } }

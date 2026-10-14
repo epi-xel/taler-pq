@@ -264,7 +264,7 @@
       }
 
       .cls-65 {
-        fill: url(#linear-gradient);
+        fill: var(--diagram-reserve, url(#linear-gradient));
       }
 
       .cls-66 {
@@ -488,7 +488,7 @@
     </g>
     <g id="merchant" class="fragment fade" data-fragment-index="8">
       <g class="cls-3">
-        <circle class="cls-21" cx="862.58" cy="617.68" r="94.27"/>
+        <circle id="merchant-circle" class="cls-21" cx="862.58" cy="617.68" r="94.27"/>
       </g>
       <text class="cls-60" transform="translate(813.54 677.8)"><tspan x="0" y="0">Me</tspan><tspan class="cls-13" x="32.74" y="0">r</tspan><tspan class="cls-53" x="40.89" y="0">c</tspan><tspan x="52.54" y="0">hant</tspan></text>
       <g>
@@ -560,9 +560,11 @@
       <rect class="cls-9" x="787.78" y="386.28" width="118.61" height="66.02" rx="13.85" ry="13.85"/>
       <text class="cls-17" transform="translate(808.43 414.59)"><tspan x="0" y="0">Deposit</tspan><tspan x="-2.95" y="22.8">p</tspan><tspan class="cls-58" x="10.16" y="22.8">r</tspan><tspan x="18.17" y="22.8">o</tspan><tspan class="cls-52" x="30.62" y="22.8">t</tspan><tspan x="38.56" y="22.8">o</tspan><tspan class="cls-45" x="51.01" y="22.8">c</tspan><tspan x="62.1" y="22.8">ol</tspan></text>
     </g>
-    <g id="bankm" class="fragment fade" data-fragment-index="15">
+    <!-- Empty fragment: only drives the "deanonymize" animation step (coin flips back to euro at the exchange). -->
+    <g id="deanonymize-step" class="fragment" data-step="deanonymize" data-fragment-index="15"></g>
+    <g id="bankm" class="fragment fade" data-fragment-index="16">
       <g class="cls-66">
-        <circle class="cls-21" cx="1026.55" cy="299.6" r="94.27"/>
+        <circle id="bankm-circle" class="cls-21" cx="1026.55" cy="299.6" r="94.27"/>
       </g>
       <text class="cls-60" transform="translate(968.42 344.47)"><tspan x="0" y="0">Me</tspan><tspan class="cls-13" x="32.74" y="0">r</tspan><tspan class="cls-53" x="40.89" y="0">c</tspan><tspan x="52.54" y="0">hant</tspan><tspan class="cls-48" x="101.89" y="0">’</tspan><tspan x="106.01" y="0">s</tspan><tspan x="30.61" y="25.2">Bank</tspan></text>
       <g>
@@ -570,7 +572,7 @@
         <path class="cls-16" d="M1026.55,253.18c-3.2,0-5.79,2.68-5.79,5.99s2.59,5.99,5.79,5.99,5.79-2.68,5.79-5.99-2.59-5.99-5.79-5.99h0ZM1026.55,262.76c-1.92,0-3.47-1.61-3.47-3.59s1.56-3.59,3.47-3.59,3.47,1.61,3.47,3.59-1.55,3.59-3.47,3.59h0Z"/>
       </g>
     </g>
-    <g id="wire-money2-group" class="fragment fade" data-step="wire-money2" data-fragment-index="16">
+    <g id="wire-money2-group" class="fragment fade" data-step="wire-money2" data-fragment-index="17">
       <g id="Wire-money2-line">
         <g>
           <line class="cls-8" x1="901.36" y1="307.06" x2="689.6" y2="307.06"/>
@@ -617,8 +619,8 @@
     </g>
   </g>
 </svg>
-<div class="fragment fade" data-fragment-index="17" style="position: absolute; top: 0; left: 0; background-color: var(--diagram-bg, white); width: 100%; height: 100%; opacity: 0.8;"></div>
-<h4 class="fragment fade" data-fragment-index="17" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; text-align: center; font-weight: normal"><strong>Online</strong> and <strong>centralized</strong></h4>
+<div class="fragment fade" data-fragment-index="18" style="position: absolute; top: 0; left: 0; background-color: color-mix(in srgb, var(--diagram-bg, white) 80%, transparent); width: 100%; height: 100%;"></div>
+<h4 class="fragment fade" data-fragment-index="18" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; text-align: center; font-weight: normal"><strong>Online</strong> and <strong>centralized</strong></h4>
 </div>
 <div>
   <h4 class="fragment fade" data-fragment-index="9" style="font-weight: normal; color:var(--diagram-brand, #0042b3); font-size:24pt"><strong>Anonymous</strong> payment process</h4>

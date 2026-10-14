@@ -207,7 +207,7 @@
   </defs>
   <g id="Tokens">
     <g class="fragment fade">
-    <rect class="cls-streaming-18" x="506.03" width="572.96" height="537.96" rx="51.3" ry="51.3"/>
+    <rect class="cls-streaming-18 wash" style="fill: var(--diagram-wash-blue, var(--diagram-brand, #0042b3)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="506.03" width="572.96" height="537.96" rx="51.3" ry="51.3"/>
     <g id="streaming1">
       <g>
         <line class="cls-streaming-3" x1="847.48" y1="126.45" x2="723.46" y2="126.45"/>

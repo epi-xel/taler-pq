@@ -98,6 +98,7 @@
 
       .ml-cls-28 {
         opacity: .36;
+        fill: #000; /* shadow stays dark in both themes (no fill would inherit the light dark-mode text colour) */
       }
 
       .ml-cls-29 {

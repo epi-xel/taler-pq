@@ -7,7 +7,7 @@
       }
 
       .cls-reobtain-2, .cls-reobtain-3 {
-        fill: #39b54a;
+        fill: var(--diagram-green, #39b54a);
       }
 
       .cls-reobtain-2, .cls-reobtain-4 {
@@ -47,7 +47,7 @@
       }
 
       .cls-reobtain-9 {
-        stroke: #39b54a;
+        stroke: var(--diagram-green, #39b54a);
       }
 
       .cls-reobtain-16 {
@@ -336,10 +336,10 @@
   <g id="Link">
     <g id="Re-obtaining_a_coin" data-name="Re-obtaining a coin">
       <g id="blue">
-        <rect class="cls-reobtain-4" x="334.34" width="254.9" height="478" rx="32.55" ry="32.55"/>
+        <rect class="cls-reobtain-4 wash" style="fill: var(--diagram-keybox-yellow, var(--diagram-wash-blue, var(--diagram-brand, #0042b3))); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-keyframe-yellow, var(--diagram-wash-stroke, none)); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="334.34" width="254.9" height="478" rx="32.55" ry="32.55"/>
         <g class="cls-reobtain-19">
-          <rect class="cls-reobtain-18" x="352.16" y="157.79" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
-          <rect class="cls-reobtain-8" x="352.16" y="157.79" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
+          <rect class="cls-reobtain-18" style="fill: var(--diagram-card, var(--diagram-surface, #fff))" x="352.16" y="157.79" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
+          <rect class="cls-reobtain-8" style="stroke: var(--diagram-card-border, var(--diagram-brand, #0042b3))" x="352.16" y="157.79" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
         </g>
         <g>
           <g class="cls-reobtain-25">
@@ -425,10 +425,10 @@
         <text class="cls-reobtain-21" transform="translate(670.1 113.25)"><tspan x="0" y="0">Ref</tspan><tspan class="cls-reobtain-27" x="44.98" y="0">r</tspan><tspan x="55.46" y="0">esh</tspan></text>
       </g>
       <g id="green" class="fragment fade">
-        <rect class="cls-reobtain-2" x="850.43" y="3.61" width="254.9" height="478" rx="32.55" ry="32.55"/>
+        <rect class="cls-reobtain-2 wash" style="fill: var(--diagram-keybox-lime, var(--diagram-wash-green, var(--diagram-green, #39b54a))); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-keyframe-lime, var(--diagram-wash-stroke, none)); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="850.43" y="3.61" width="254.9" height="478" rx="32.55" ry="32.55"/>
         <g class="cls-reobtain-5">
-          <rect class="cls-reobtain-18" x="868.26" y="161.4" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
-          <rect class="cls-reobtain-8" x="868.26" y="161.4" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
+          <rect class="cls-reobtain-18" style="fill: var(--diagram-card, var(--diagram-surface, #fff))" x="868.26" y="161.4" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
+          <rect class="cls-reobtain-8" style="stroke: var(--diagram-card-border, var(--diagram-brand, #0042b3))" x="868.26" y="161.4" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
         </g>
         <g>
           <g class="cls-reobtain-16">
@@ -480,7 +480,7 @@
         </g>
         <g>
           <g class="cls-reobtain-31">
-            <ellipse class="cls-reobtain-34" cx="977.88" cy="80.26" rx="49.49" ry="49.73"/>
+            <ellipse class="cls-reobtain-34" style="fill: var(--diagram-coin-refreshed, #fbd63b)" cx="977.88" cy="80.26" rx="49.49" ry="49.73"/>
           </g>
           <path class="cls-reobtain-12" d="M1017.26,80.36c0,24.83-17.59,39.46-39.28,39.46s-39.28-17.67-39.28-39.46,17.59-39.46,39.28-39.46,39.28,17.67,39.28,39.46Z"/>
           <g>

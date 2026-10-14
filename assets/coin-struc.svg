@@ -481,7 +481,7 @@
       </g>
       <g id="ds-keys" class="fragment fade" data-fragment-index="1">
         <g>
-          <rect class="coin-struc-cls-25" x="0" y="261.51" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
+          <rect class="coin-struc-cls-25 wash" style="fill: var(--diagram-wash-gold, #fbd63b); opacity: var(--diagram-wash-opacity, .38); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="0" y="261.51" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
           <g>
             <g class="coin-struc-cls-33">
               <ellipse class="coin-struc-cls-28" cx="52.62" cy="309.77" rx="32.77" ry="33.44"/>
@@ -492,7 +492,7 @@
           <text class="coin-struc-cls-19" transform="translate(37.52 378.18) scale(.97 1)"><tspan x="0" y="0">sk</tspan></text>
         </g>
         <g>
-          <rect class="coin-struc-cls-25" x="117.66" y="260.82" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
+          <rect class="coin-struc-cls-25 wash" style="fill: var(--diagram-wash-gold, #fbd63b); opacity: var(--diagram-wash-opacity, .38); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="117.66" y="260.82" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
           <g>
             <g class="coin-struc-cls-36">
               <ellipse class="coin-struc-cls-28" cx="169.99" cy="309.77" rx="33.58" ry="33.9"/>
@@ -506,10 +506,10 @@
       </g>
     </g>
     <g id="Coin-2" data-name="Coin">
-      <rect id="bg-blue" class="coin-struc-cls-18" x="301.62" y="28.87" width="254.9" height="478" rx="32.55" ry="32.55"/>
+      <rect id="bg-blue" class="coin-struc-cls-18 wash" style="fill: var(--diagram-wash-blue, var(--diagram-brand, #0042b3)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="301.62" y="28.87" width="254.9" height="478" rx="32.55" ry="32.55"/>
       <g id="bg-white" class="coin-struc-cls-46">
-        <rect class="coin-struc-cls-28" x="319.44" y="186.66" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
-        <rect class="coin-struc-cls-8" x="319.44" y="186.66" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
+        <rect class="coin-struc-cls-28" style="fill: var(--diagram-card, var(--diagram-surface, #fff))" x="319.44" y="186.66" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
+        <rect class="coin-struc-cls-8" style="stroke: var(--diagram-card-border, var(--diagram-brand, #0042b3))" x="319.44" y="186.66" width="220.02" height="301.86" rx="23.42" ry="23.42"/>
       </g>
       <g id="coin">
         <g class="coin-struc-cls-7">
@@ -580,7 +580,7 @@
       </g>
       <g id="bs-keypair" class="fragment fade" data-fragment-index="3">
         <g>
-          <rect class="coin-struc-cls-18" x="647" y="264.3" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
+          <rect class="coin-struc-cls-18 wash" style="fill: var(--diagram-wash-blue, var(--diagram-brand, #0042b3)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="647" y="264.3" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
           <text class="coin-struc-cls-19" transform="translate(686.98 383.71) scale(.97 1)"><tspan x="0" y="0">sk</tspan></text>
           <g>
             <g class="coin-struc-cls-5">
@@ -592,7 +592,7 @@
           </g>
         </g>
         <g>
-          <rect class="coin-struc-cls-18" x="761.76" y="264.65" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
+          <rect class="coin-struc-cls-18 wash" style="fill: var(--diagram-wash-blue, var(--diagram-brand, #0042b3)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="761.76" y="264.65" width="107.96" height="137.05" rx="19.56" ry="19.56"/>
           <g>
             <g class="coin-struc-cls-23">
               <ellipse class="coin-struc-cls-28" cx="814.11" cy="319.26" rx="35.88" ry="36.61"/>
@@ -610,8 +610,8 @@
     </g>
     <g id="Denominations" class="fragment fade" data-fragment-index="4">
       <g class="coin-struc-cls-41">
-        <rect class="coin-struc-cls-28" x="963.15" y="43.26" width="231.66" height="420.61" rx="23.42" ry="23.42"/>
-        <rect class="coin-struc-cls-8" x="963.15" y="43.26" width="231.66" height="420.61" rx="23.42" ry="23.42"/>
+        <rect class="coin-struc-cls-28" style="fill: var(--diagram-card, var(--diagram-surface, #fff))" x="963.15" y="43.26" width="231.66" height="420.61" rx="23.42" ry="23.42"/>
+        <rect class="coin-struc-cls-8" style="stroke: var(--diagram-card-border, var(--diagram-brand, #0042b3))" x="963.15" y="43.26" width="231.66" height="420.61" rx="23.42" ry="23.42"/>
       </g>
       <g>
         <g>

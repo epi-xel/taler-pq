@@ -36,6 +36,8 @@ Then open <http://localhost:8000> in a browser.
 
 ## Dark mode
 
+- **While presenting** — click the sun/moon button in the top-right corner
+  (`logic/theme-toggle.js`); it switches live and updates `?theme=` in the URL.
 - **Default for everyone** — set `MODE: 'dark'` in `theme.js`.
 - **Per visit** — add `?theme=dark` (or `?theme=light`) to the URL, e.g.
   <http://localhost:8000/?theme=dark>.

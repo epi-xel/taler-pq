@@ -1,12 +1,17 @@
-<!-- Refresh protocol: cut-and-choose and refresh derive. The slides after the
+<!-- Refresh protocol: cut-and-choose and refresh derive. Refresh Derive starts
+     a new auto-animate group (data-auto-animate-restart): nothing matches the
+     protocol slide, so a morph would render as a hard cut. The slides after the
      intro have no id on purpose (keeps existing #/0/N links stable). -->
 <section id="refresh-protocol-intro" data-background="var(--taler-bg)" data-transition="slide" data-auto-animate>
 	<h3 class="taler-title" style="margin-bottom:10pt;">
 	How?
 	</h3>
-	<h2 data-id="refresh-prot-text" class="fragment fade-up bold">
-	Refresh protocol
-	</h2>
+	<!-- Own line: the morphing h2 is inline-block (styles/sections.css). -->
+	<div>
+		<h2 data-id="refresh-prot-text" class="fragment fade-up bold">
+		Refresh protocol
+		</h2>
+	</div>
 </section>
 <section data-background-iframe="assets/section.html" data-auto-animate>
 	<h2 data-id="refresh-prot-text" class="stripe-title">
@@ -18,13 +23,13 @@
 		<h2 data-id="refresh-prot-text" class="taler-title" style="font-size: 42pt">
 			Refresh protocol
 		</h2>
-		<div id="refresh-prot" style="flex:1; width:100%; margin-top: 20pt;"></div>
+		<div id="refresh-prot" style="flex:1; width:85%; margin: 10pt auto 0;"></div>
 		<h4 class="fragment fade" style="margin-top:10pt; font-weight: normal;">
 			Cut-and-choose
 		</h4>
 	</div>
 </section>
-<section data-background="var(--taler-bg)" data-transition="slide" data-auto-animate>
+<section data-background="var(--taler-bg)" data-transition="slide" data-auto-animate data-auto-animate-restart>
 	<div class="v-stack">
 		<h3 data-id="refresh-der" class="taler-title" style="margin: 30pt;">
 			Refresh Derive
@@ -52,6 +57,16 @@
 			<h4 style="font-weight: normal;">
 				to the Exchange
 			</h4>
+		</div>
+	</div>
+</section>
+<section data-background="var(--taler-bg)" data-transition="slide">
+	<div class="v-stack">
+		<h3 class="taler-title" style="margin: 30pt;">
+			Re-obtaining a refreshed coin
+		</h3>
+		<div style="width:100%; display:flex; justify-content:center;">
+			<div id="reobtain-coin" style="width:78%;"></div>
 		</div>
 	</div>
 </section>

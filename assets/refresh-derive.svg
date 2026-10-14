@@ -7,7 +7,7 @@
       }
 
       .rd-cls-2, .rd-cls-3, .rd-cls-4 {
-        fill: #39b54a;
+        fill: var(--diagram-green, #39b54a);
       }
 
       .rd-cls-2, .rd-cls-5, .rd-cls-6 {
@@ -64,7 +64,7 @@
       }
 
       .rd-cls-13, .rd-cls-14 {
-        stroke: #39b54a;
+        stroke: var(--diagram-green, #39b54a);
       }
 
       .rd-cls-22 {
@@ -433,7 +433,7 @@
     <g id="Refresh_Derive" data-name="Refresh Derive">
       <g id="blue">
         <!-- <text class="fragment fade rd-cls-47" data-fragment-index="1" transform="translate(207 196.43)"><tspan class="rd-cls-33" x="0" y="0">k</tspan><tspan class="rd-cls-7" x="15.66" y="0">e</tspan><tspan class="rd-cls-43" x="31.7" y="0">y</tspan><tspan class="rd-cls-45" x="46.17" y="0">s</tspan></text> -->
-        <rect class="rd-cls-6" y="10.39" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+        <rect class="rd-cls-6 wash" style="fill: var(--diagram-keybox-yellow, var(--diagram-wash-blue, var(--diagram-brand, #0042b3))); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-keyframe-yellow, var(--diagram-wash-stroke, none)); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" y="10.39" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
         <g>
           <g class="rd-cls-29">
             <ellipse class="rd-cls-48" cx="62.07" cy="77.74" rx="40.39" ry="41.09"/>
@@ -468,7 +468,7 @@
       </g>
       <g id="rd" class="fragment fade" data-fragment-index="0">
         <g id="green">
-          <rect class="rd-cls-2" x="536.04" y="13.37" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+          <rect class="rd-cls-2 wash" style="fill: var(--diagram-keybox-lime, var(--diagram-wash-green, var(--diagram-green, #39b54a))); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-keyframe-lime, var(--diagram-wash-stroke, none)); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="536.04" y="13.37" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
           <g>
             <g class="rd-cls-50">
               <rect class="rd-cls-26" x="660.55" y="32.12" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
@@ -512,7 +512,7 @@
       <text id="ecdh" class="fragment fade rd-cls-47" data-fragment-index="1" transform="translate(90.21 213.6)"><tspan class="rd-cls-36" x="0" y="0">AND X25519 keys</tspan></text>
       <g id="link-key" class="fragment fade">
         <g>
-          <rect class="rd-cls-5" y="226.17" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+          <rect class="rd-cls-5 wash" style="fill: var(--diagram-keybox-teal, var(--diagram-wash-teal, #65c8d0)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-keyframe-teal, var(--diagram-wash-stroke, none)); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" y="226.17" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
           <g class="rd-cls-9">
             <rect class="rd-cls-26" x="122.13" y="245.37" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
             <rect class="rd-cls-11" x="122.13" y="245.37" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
@@ -617,6 +617,7 @@
         </g>
       </g>
       <g id="blind-fact" class="fragment fade">
+        <path class="env-paper" style="fill: var(--diagram-paper-green, none)" d="M568.8,523.33h152.58v104.17h-152.58v-104.17Z"/>
         <path class="rd-cls-14" d="M568.8,523.33h152.58v104.17h-152.58v-104.17ZM568.8,523.33l70.54,68.5c3.22,3.12,8.3,3.12,11.52,0l70.51-68.5M568.8,627.5l53.87-51.86M721.37,627.5l-54.06-51.65"/>
         <g>
           <line class="rd-cls-12" x1="513.45" y1="569.08" x2="363.41" y2="481.59"/>

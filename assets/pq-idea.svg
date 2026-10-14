@@ -7,7 +7,7 @@
       }
 
       .pq-cls-2, .pq-cls-3 {
-        fill: #39b54a;
+        fill: var(--diagram-green, #39b54a);
       }
 
       .pq-cls-2, .pq-cls-4 {
@@ -63,7 +63,7 @@
       }
 
       .pq-cls-8, .pq-cls-9 {
-        stroke: #39b54a;
+        stroke: var(--diagram-green, #39b54a);
       }
 
       .pq-cls-19 {
@@ -327,6 +327,7 @@
             <path class="pq-cls-3" d="M599.47,262.91l2.42,2.58c.58.62,1.57.62,2.15,0l1.35-1.43c.58-.62,1.57-.62,2.15,0l1.22,1.3c.63.67,1.71.61,2.26-.12l2.58-3.43c.4-.53.4-1.25,0-1.78l-3.2-4.25c-.28-.37-.72-.59-1.18-.59h-20.21c-.54,0-1.01-.3-1.29-.76-2.03-3.35-5.53-5.54-9.54-5.54-6.25,0-11.31,5.38-11.31,12.02s5.06,12.02,11.31,12.02c4.01,0,7.51-2.19,9.54-5.54.28-.46.75-.76,1.29-.76h1.99c.41,0,.8-.17,1.08-.47l.64-.68c.58-.62,1.57-.62,2.15,0h0c.58.62,1.57.62,2.15,0l2.42-2.58h0ZM573.35,264.34c-1.78,0-3.23-1.55-3.23-3.44s1.45-3.44,3.23-3.44,3.23,1.55,3.23,3.44-1.45,3.44-3.23,3.44h0Z"/>
           </g>
         </g>
+        <path class="env-paper" style="fill: var(--diagram-paper-green, none)" d="M562,395.69h152.58v104.17h-152.58v-104.17Z"/>
         <path class="pq-cls-9" d="M562,395.69h152.58v104.17h-152.58v-104.17ZM562,395.69l70.54,68.5c3.22,3.12,8.3,3.12,11.52,0l70.51-68.5M562,499.86l53.87-51.86M714.57,499.86l-54.06-51.65"/>
         <g>
           <line class="pq-cls-7" x1="506.65" y1="441.44" x2="356.61" y2="353.95"/>
@@ -336,7 +337,7 @@
     </g>
   <g id="PQ">
     <g id="pq-init">
-      <rect class="pq-cls-4" y="10.39" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+      <rect class="pq-cls-4 wash" style="fill: var(--diagram-keybox-yellow, var(--diagram-wash-blue, var(--diagram-brand, #0042b3))); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-keyframe-yellow, var(--diagram-wash-stroke, none)); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" y="10.39" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
       <g>
         <g class="pq-cls-22">
           <ellipse class="pq-cls-34" cx="62.07" cy="77.74" rx="40.39" ry="41.09"/>
@@ -370,7 +371,7 @@
       </g>
       <g id="rd">
         <g id="green">
-          <rect class="pq-cls-2" x="536.04" y="13.37" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+          <rect class="pq-cls-2 wash" style="fill: var(--diagram-keybox-lime, var(--diagram-wash-green, var(--diagram-green, #39b54a))); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-keyframe-lime, var(--diagram-wash-stroke, none)); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="536.04" y="13.37" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
           <g>
             <g class="pq-cls-35">
               <rect class="pq-cls-13" x="660.55" y="32.12" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
@@ -413,7 +414,7 @@
     </g>
   </g>
 </svg>
-<div class="v-stack" style="width: 400pt; position: absolute; right: 10pt; bottom: 10pt">
-  <p class="fragment fade" style="background-color: var(--diagram-tint, #0042b341); padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;"><strong>Only owner</strong> can generate this signature</p>
-  <p class="fragment fade" style="background-color: var(--diagram-tint, #0042b341); padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be <strong>always</strong> able to generate this signature</p>
+<div class="v-stack" style="width: 400pt; position: absolute; right: 80pt; bottom: 10pt">
+  <p class="fragment fade taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;"><strong>Only owner</strong> can generate this signature</p>
+  <p data-morph="owner-sig" class="fragment fade taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be <strong>always</strong> able to generate this signature</p>
 </div>

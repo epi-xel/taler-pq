@@ -7,23 +7,31 @@
 </section>
 <section id="classic-payment-systems" data-background="assets/creditcard.jpg" data-transition="slide">
 </section>
-<section id="classic-payment-systems-downsides" data-background="assets/creditcard.jpg" data-transition="fade">
-	<div class="r-stack">
-		<div style="background-color: white; width: 70%; height: 100%; opacity: 0.8;"></div>
-		<div class="v-stack">
-			<h2 class="fragment fade-down bold" style="margin: 30pt; color:#222;">
-				Traceability
-			</h2>
-			<h2 class="fragment fade-down bold" style="margin: 30pt; color:#222;">
-				Profiling
-			</h2>
-			<h2 class="fragment fade-down bold" style="margin: 30pt; color:#222;">
-				Sensitive data exposure
-			</h2>
-		</div>
+<!-- Same photo as the previous slide, so no slide transition: the frosted panel
+     fades itself in (styles/sections.css .photo-panel). -->
+<section id="classic-payment-systems-downsides" data-background="assets/creditcard.jpg" data-transition="none">
+	<style>
+		#classic-payment-systems-downsides .photo-panel {
+			display: inline-block; padding: 20pt 50pt;
+		}
+	</style>
+	<div class="photo-panel">
+		<h2 class="fragment fade-down bold" style="margin: 30pt 0; color:#222;">
+			Traceability
+		</h2>
+		<h2 class="fragment fade-down bold" style="margin: 30pt 0; color:#222;">
+			Profiling
+		</h2>
+		<h2 class="fragment fade-down bold" style="margin: 30pt 0; color:#222;">
+			Sensitive data exposure
+		</h2>
 	</div>
 </section>
-<section id="bicoin" data-background="assets/creditcard-overlay.png" data-transition="slide" data-auto-animate>
+<!-- Washed photo: white wash (pre-baked PNG) in light, the photo dimmed over the
+     dark slide colour in dark (data-dark-* swapped in by logic/main.js). -->
+<section id="bicoin" data-background="assets/creditcard-overlay.png"
+	data-dark-background="assets/creditcard.jpg" data-dark-background-color="var(--taler-bg)" data-dark-background-opacity="0.18"
+	data-transition="slide" data-auto-animate>
 	<img data-id="bitcoin"
 	src="assets/bitcoin.png"
 	style="height: 50%;background: transparent"/>

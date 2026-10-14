@@ -8,29 +8,36 @@
 	</h2>
 </section>
 <section id="other-use-cases" data-background="var(--taler-bg)" data-transition="slide" data-auto-animate>
+	<style>
+		/* Vertical stack of equal-width cards: icon left, label right. */
+		#other-use-cases .card-stack { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+		#other-use-cases .use-card {
+			width: 760px; display: flex; align-items: center; gap: 24px; padding: 14px 30px;
+		}
+		#other-use-cases .use-card i { font-size: 30pt; line-height: 1; color: var(--taler-blue); }
+		#other-use-cases .card-label { font-size: 26pt; font-weight: bold; margin: 0; text-align: left; white-space: nowrap; }
+	</style>
 	<h2 data-id="not-only" class="taler-title" style="margin-bottom: 30pt;">
 	...but not only
 	</h2>
-	<div class="fragment fade-down bold" style="margin-bottom: 30pt;">
-		<h3 class="bold">
-			<i class="bi bi-ticket-perforated taler-blue"></i>
-			Vouchers</h3>
-	</div>
-	<div class="fragment fade-down bold" style="margin-bottom: 30pt;">
-		<h3 class="bold">
-			<i class="bi bi-credit-card taler-blue"></i>
-			Loyalty cards</h3>
-	</div>
-	<div class="fragment fade-down bold" style="margin-bottom: 30pt;">
-		<h3 class="bold">
-			<i class="bi bi-person-check taler-blue"></i>
-			Online age verification</h3>
-	</div>
-	<div class="fragment fade-down bold" style="margin-bottom: 30pt;">
-		<h3 class="bold">
-			<i class="bi bi-tv taler-blue"></i>
-			Streaming service subscriptions
-		</h3>
+	<!-- One equal-width card per use case, revealed top to bottom. -->
+	<div class="card-stack">
+		<div class="taler-card use-card fragment fade-down">
+			<i class="bi bi-ticket-perforated"></i>
+			<h3 class="card-label">Vouchers</h3>
+		</div>
+		<div class="taler-card use-card fragment fade-down">
+			<i class="bi bi-credit-card"></i>
+			<h3 class="card-label">Loyalty cards</h3>
+		</div>
+		<div class="taler-card use-card fragment fade-down">
+			<i class="bi bi-person-check"></i>
+			<h3 class="card-label">Online age verification</h3>
+		</div>
+		<div class="taler-card use-card fragment fade-down">
+			<i class="bi bi-tv"></i>
+			<h3 class="card-label">Streaming service subscriptions</h3>
+		</div>
 	</div>
 </section>
 <section id="deployed-real-world" data-background="var(--taler-bg)" data-transition="slide">

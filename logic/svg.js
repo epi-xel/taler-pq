@@ -23,6 +23,8 @@ const SVGS = [
 	'tsig',
 	'new-rd',
 	'reveal-ex',
+	'diagram-recap',
+	'reobtain-coin',
 ];
 
 function loadSVGs() {
@@ -37,6 +39,7 @@ function loadSVGs() {
 			.then(r => r.text())
 			.then(svg => {
 				container.innerHTML = svg;
+				markNodeIcons(container);
 				if (name === 'diagram') initAnimation();
 			});
 	});
@@ -49,21 +52,54 @@ function loadSVGs() {
 	});
 }
 
+// Tag agent nodes (Customer, Merchant, banks, A/B avatars) with .node-icon so
+// document.css can recolour their icon in dark. A node is a surface-filled
+// circle in a drop-shadow wrapper whose group also holds a text label; key and
+// coin circles have no shadow wrapper or no label, so they're left alone.
+function markNodeIcons(container) {
+	const probe = document.createElement('div');
+	probe.style.color = 'var(--diagram-surface)';
+	container.appendChild(probe);
+	const surface = getComputedStyle(probe).color;
+	probe.remove();
+	container.querySelectorAll('circle, ellipse').forEach(function (shape) {
+		const wrapper = shape.parentNode;
+		if (wrapper.children.length !== 1 || getComputedStyle(shape).fill !== surface) return;
+		const node = wrapper.parentNode;
+		if (node.querySelector('text')) node.classList.add('node-icon');
+	});
+}
+
 // <img data-themed> can't read CSS vars, so in dark mode fetch the SVG, resolve
 // each var(--diagram-x, fallback) to the current value, and swap in a data URL.
-// Light mode keeps the original files (the fallbacks are the light colours).
+// Light mode shows the original files (the fallbacks are the light colours).
+// data-themed records the mode an image was last drawn for, so this re-runs
+// cheaply (resize) and redraws only after a theme switch (logic/theme-toggle.js).
+// The original file is kept in data-original-src (not data-src: reveal.js
+// treats that as a lazy-load source and copies it back into src).
 function themeImages() {
-	if (window.TALER.mode === 'light') return [];
+	const mode = window.TALER.mode;
 	const rootStyle = getComputedStyle(document.documentElement);
-	const imgs = document.querySelectorAll('img[data-themed]:not([data-themed="done"])');
+	const imgs = document.querySelectorAll('img[data-themed]:not([data-themed="' + mode + '"])');
 	return Array.from(imgs).map(function (img) {
-		img.setAttribute('data-themed', 'done');
-		return fetch(img.getAttribute('src'))
+		if (!img.dataset.originalSrc) img.dataset.originalSrc = img.getAttribute('src');
+		img.setAttribute('data-themed', mode);
+		if (mode === 'light') {
+			img.src = img.dataset.originalSrc;
+			return Promise.resolve();
+		}
+		return fetch(img.dataset.originalSrc)
 			.then(r => r.text())
 			.then(svg => {
-				svg = svg.replace(/var\((--[\w-]+),\s*([^)]+)\)/g, function (_, name, fallback) {
-					return rootStyle.getPropertyValue(name).trim() || fallback;
-				});
+				// Fallbacks may hold one level of parens (url(...), a nested var(...));
+				// repeat so nested vars resolve outside-in.
+				const VAR = /var\((--[\w-]+),\s*((?:[^()]|\([^()]*\))+)\)/g;
+				for (let prev = null; prev !== svg; ) {
+					prev = svg;
+					svg = svg.replace(VAR, function (_, name, fallback) {
+						return rootStyle.getPropertyValue(name).trim() || fallback.trim();
+					});
+				}
 				// Unfilled text defaults to black; lift it like the inline SVGs.
 				svg = svg.replace('<svg', '<svg style="fill: ' + rootStyle.getPropertyValue('--diagram-text').trim() + '"');
 				img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);

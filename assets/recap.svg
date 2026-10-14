@@ -27,7 +27,7 @@
       }
 
       .cls-7, .cls-8, .cls-9 {
-        fill: #39b54a;
+        fill: var(--diagram-green, #39b54a);
       }
 
       .cls-7, .cls-10, .cls-11 {
@@ -111,7 +111,7 @@
       }
 
       .cls-15, .cls-16 {
-        stroke: #39b54a;
+        stroke: var(--diagram-green, #39b54a);
       }
 
       .cls-39 {
@@ -1093,7 +1093,7 @@
         <rect class="cls-14" x="1530.47" y="1.5" width="1008" height="723.25" rx="69.29" ry="69.29"/>
         <g id="blue">
           <text class="cls-70" transform="translate(1835.9598 235.7708)"><tspan class="cls-63" x="0" y="0">k</tspan><tspan class="cls-27" x="15.66" y="0">e</tspan><tspan class="cls-99" x="31.7" y="0">y</tspan><tspan class="cls-102" x="46.17" y="0">s</tspan></text>
-          <rect class="cls-11" x="1578.5" y="53.78" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+          <rect class="cls-11 wash" style="fill: var(--diagram-wash-blue, var(--diagram-brand, #0042b3)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="1578.5" y="53.78" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
           <g>
             <g class="cls-34">
               <ellipse class="cls-110" cx="1640.57" cy="121.12" rx="40.39" ry="41.09"/>
@@ -1128,7 +1128,7 @@
         </g>
         <g id="rd">
           <g id="green">
-            <rect class="cls-7" x="2114.54" y="56.76" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+            <rect class="cls-7 wash" style="fill: var(--diagram-wash-green, var(--diagram-green, #39b54a)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="2114.54" y="56.76" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
             <g>
               <g class="cls-29">
                 <rect class="cls-23" x="2239.05" y="75.51" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
@@ -1172,7 +1172,7 @@
         <text id="ecdh" class="cls-70" transform="translate(1745.5208 237.7708)"><tspan class="cls-36" x="0" y="0">E</tspan><tspan x="17.95" y="0">CDH</tspan></text>
         <g id="link-key">
           <g>
-            <rect class="cls-10" x="1578.5" y="269.55" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+            <rect class="cls-10 wash" style="fill: var(--diagram-wash-teal, #65c8d0); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="1578.5" y="269.55" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
             <g class="cls-96">
               <rect class="cls-23" x="1700.63" y="288.76" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
               <rect class="cls-13" x="1700.63" y="288.76" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
@@ -1292,7 +1292,7 @@
     <g>
       <rect class="cls-14" x="1536.39" y="771.31" width="1008" height="658.72" rx="69.29" ry="69.29"/>
       <g id="pq-init">
-        <rect class="cls-11" x="1599.48" y="855.02" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+        <rect class="cls-11 wash" style="fill: var(--diagram-wash-blue, var(--diagram-brand, #0042b3)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="1599.48" y="855.02" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
         <g>
           <g class="cls-1">
             <ellipse class="cls-110" cx="1661.55" cy="922.36" rx="40.39" ry="41.09"/>
@@ -1326,7 +1326,7 @@
         </g>
         <g id="rd-2" data-name="rd">
           <g id="green-2" data-name="green">
-            <rect class="cls-7" x="2135.52" y="858" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
+            <rect class="cls-7 wash" style="fill: var(--diagram-wash-green, var(--diagram-green, #39b54a)); opacity: var(--diagram-wash-opacity, .2); stroke: var(--diagram-wash-stroke, none); stroke-width: 2px; filter: var(--diagram-wash-shadow, none)" x="2135.52" y="858" width="352.95" height="142.47" rx="22.75" ry="22.75"/>
             <g>
               <g class="cls-91">
                 <rect class="cls-23" x="2260.03" y="876.74" width="206.81" height="102.64" rx="13.53" ry="13.53"/>
