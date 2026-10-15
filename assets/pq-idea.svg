@@ -394,7 +394,7 @@
           </g>
           <g>
             <g class="pq-cls-1">
-              <ellipse class="pq-cls-34" cx="601.42" cy="83.77" rx="41.92" ry="41.78"/>
+              <ellipse class="pq-cls-34" style="fill: var(--diagram-coin-refreshed, #fbd63b)" cx="601.42" cy="83.77" rx="41.92" ry="41.78"/>
             </g>
             <path class="pq-cls-11" d="M634.77,83.86c0,20.87-14.9,33.16-33.27,33.16s-33.27-14.85-33.27-33.16,14.9-33.16,33.27-33.16,33.27,14.85,33.27,33.16Z"/>
             <g>
@@ -415,6 +415,6 @@
   </g>
 </svg>
 <div class="v-stack" style="width: 400pt; position: absolute; right: 80pt; bottom: 10pt">
-  <p class="fragment fade taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;"><strong>Only owner</strong> can generate this signature</p>
-  <p data-morph="owner-sig" class="fragment fade taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The coin owner must be <strong>always</strong> able to generate this signature</p>
+  <p class="fragment fade taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;"> <strong class="taler-blue">Only</strong> the <strong>coin's owner </strong> is able </br> to generate this signature</p>
+  <p data-morph="owner-sig" class="fragment fade taler-tint" style="padding: 10pt; border-radius: 20pt; font-weight: normal; font-size: 24pt;">The <strong>coin's owner</strong> </br> must be <strong class="taler-blue">always</strong> able </br> to generate this signature</p>
 </div>

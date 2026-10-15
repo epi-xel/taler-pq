@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- Section-divider background (used via data-background-iframe): a blue→dark
-     stripe across the middle of the slide. The page colour and the stripe's
-     gradient follow the deck's theme (--taler-bg / --taler-stripe-*, read from
-     the parent document). -->
+<!-- Section-divider background (used via data-background-iframe): a stripe
+     across the middle of the slide. The page colour, the stripe's gradient and
+     its (dark-mode) neon edge follow the deck's theme (--taler-bg /
+     --taler-stripe-*, read from the parent document). -->
 <html>
 <head>
 <style>
@@ -18,6 +18,7 @@ html, body {
 	position: absolute;
 
 	top: 50%;
+	left: -10%;   /* both ends off-screen, so the dark-mode glow has no side edges */
 
 	width: 120%;
 	height: 23vmin;
@@ -46,7 +47,13 @@ html, body {
 			if (bg) document.documentElement.style.background = document.body.style.background = bg;
 			const from = root.getPropertyValue('--taler-stripe-from').trim();
 			const to = root.getPropertyValue('--taler-stripe-to').trim();
-			if (from && to) document.querySelector('.stripe').style.background = 'linear-gradient(to left, ' + from + ', ' + to + ')';
+			const stripe = document.querySelector('.stripe');
+			if (from && to) stripe.style.background = 'linear-gradient(to left, ' + from + ', ' + to + ')';
+			// Neon edge (dark): thin lines top and bottom plus a soft glow; '' = none.
+			const edge = root.getPropertyValue('--taler-stripe-edge').trim();
+			const glow = root.getPropertyValue('--taler-stripe-glow').trim();
+			stripe.style.borderTop = stripe.style.borderBottom = edge ? '2px solid ' + edge : '';
+			stripe.style.boxShadow = glow ? '0 0 28px ' + glow + ', inset 0 0 28px ' + glow : '';
 		} catch (e) { /* opened standalone or cross-origin: keep white */ }
 	};
 	window.applyParentTheme();

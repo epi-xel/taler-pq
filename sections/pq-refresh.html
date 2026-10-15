@@ -11,13 +11,13 @@
 			What's the current problem?
 		</h3>
 		<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
-			Refresh protocol exploits ability of <strong>Ed25519</strong> keys to do <strong>Curve25519 ECDH</strong>
+			<strong>Refresh protocol</strong> exploits ability of </br> <strong class="taler-blue">Ed25519</strong> keys to do  <strong class="taler-blue">Curve25519 ECDH</strong>
 		</h4>
 		<h4 class="fragment fade-up taler-tint text-pill" style="font-weight: normal;">
-			Not available in PQ
+			Not available in <strong>post-quantum</strong>
 		</h4>
 		<h4 class="fragment fade-up" style="margin: 30pt; font-weight: normal;">
-			... But we need to keep <strong>signatures</strong>
+			... But we need to keep <strong class="taler-blue">signatures</strong>
 		</h4>
 	</div>
 </section>
@@ -38,8 +38,9 @@
 		<h3 class="taler-title" style="margin: 30pt;">
 			Is this all..?
 		</h3>
-		<!-- Morphs from the same pill in assets/pq-idea.svg (logic/sections/pill-morph.js). -->
-		<p data-morph="owner-sig" class="taler-tint text-pill" style="font-weight: normal; font-size: 24pt;">The coin owner must be <strong>always</strong> able to generate this signature</p>
+		<!-- Morphs from the same pill in assets/pq-idea.svg (logic/sections/pill-morph.js):
+		     keep the words identical there, so each word flies into this one line. -->
+		<p data-morph="owner-sig" class="taler-tint text-pill" style="font-weight: normal; font-size: 24pt;">The <strong>coin's owner</strong> must be <strong class="taler-blue">always</strong><br>able to generate this signature</p>
 		<div style="width:100%; display:flex; justify-content:center;">
 			<div id="rand" style="width:100%;"></div>
 		</div>
@@ -53,7 +54,7 @@
 			</div>
 		</h3>
 		<p class="fragment fade-up taler-tint text-pill" style="font-weight: normal; font-size: 24pt;">
-			The set of possible valid signatures for a fixed </br> message-pk pair is bound by some constant t</p>
+			The <strong>set of possible valid signatures</strong> for a <span class="taler-blue">fixed </br> message-pk pair </span> is <strong>bound</strong> by some constant <strong class="taler-blue">t</strong></p>
 		<div style="width:100%; display:flex; justify-content:center;">
 			<div id="tsig" style="width:66%;"></div>
 		</div>
@@ -102,7 +103,7 @@
 			And in cut-and-choose?
 		</h3>
 		<h4 class="bold" style="margin: 20pt;">
-			How does the Exchange verify the open commitments?
+			How does the Exchange verify </br> the open commitments?
 		</h4>
 		<h4 class="fragment fade" style="font-weight: normal;">
 			Customer <strong class="taler-blue">reveals</strong> the signatures
@@ -115,7 +116,7 @@
 <section data-background="var(--taler-bg)" data-transition="slide">
 	<div class="v-stack">
 		<h3 style="font-weight: normal;">
-			The new protocol uses <strong>signatures</strong> as <strong>private information</strong>!
+			The new protocol uses <strong class="taler-blue">signatures</strong> </br> as <strong class="taler-blue">private information</strong>!
 		</h3>
 	</div>
 </section>

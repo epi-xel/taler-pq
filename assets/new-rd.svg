@@ -351,7 +351,7 @@
           </g>
           <g>
             <g class="nrd-cls-1">
-              <ellipse class="nrd-cls-37" cx="601.42" cy="83.77" rx="41.92" ry="41.78"/>
+              <ellipse class="nrd-cls-37" style="fill: var(--diagram-coin-refreshed, #fbd63b)" cx="601.42" cy="83.77" rx="41.92" ry="41.78"/>
             </g>
             <path class="nrd-cls-11" d="M634.77,83.86c0,20.87-14.9,33.16-33.27,33.16s-33.27-14.85-33.27-33.16,14.9-33.16,33.27-33.16,33.27,14.85,33.27,33.16Z"/>
             <g>

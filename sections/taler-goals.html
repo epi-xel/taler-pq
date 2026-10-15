@@ -1,35 +1,27 @@
 <!-- Asymmetric privacy (on the gradient stripe) and Taler's three goal cards.
-     Icons are <img data-themed> so svg.js can recolour them in dark. -->
+     Icons are <img data-themed> so svg.js can recolour them in dark. Styling:
+     styles/sections.css. -->
 <section id="asymmetric-privacy" data-background-iframe="assets/section.html" data-transition="slide">
 	<div class="fragment fade-up">
-		<h2 class="bold taler-blue" style="margin-bottom:-10px;">
+		<h2 class="bold taler-blue privacy-label privacy-label-top">
 		Customer
 		</h2>
-		<img data-themed src="assets/incognito.svg" height="5%" style="display: block; margin: 0 auto 8%;"/>
+		<img data-themed class="privacy-icon privacy-icon-top" src="assets/incognito.svg" height="5%"/>
 	</div>
-	<h2 class="stripe-title" style="margin:0;">
+	<h2 class="stripe-title">
 		Asymmetric privacy
 	</h2>
 	<div class="fragment fade-down">
-		<img data-themed src="assets/surveillance.svg" height="5%" style="display: block; margin: 8% auto 0;"/>
-		<h2 class="bold taler-blue" style="margin-top:-10px;">
+		<img data-themed class="privacy-icon privacy-icon-bottom" src="assets/surveillance.svg" height="5%"/>
+		<h2 class="bold taler-blue privacy-label privacy-label-bottom">
 		Merchant
 		</h2>
 	</div>
 </section>
 <section id="taler-goals" data-background="var(--taler-bg)" data-transition="slide">
-	<style>
-		#taler-goals .card-grid { --cols: 3; --col-width: 300px; gap: 40px; }
-		#taler-goals .icon-card { padding: 28px 24px; }
-		#taler-goals .card-icon img { height: 90px; }
-		#taler-goals .goal-text { font-size: 22pt; font-weight: normal; margin: 0; }
-	</style>
-	<!-- The real Taler logo stands in for the word "Taler". vertical-align puts
-	     the logo's letter baseline (60/90 of its height) on the text baseline; the
-	     text uses the logo's own colour (--diagram-brand). -->
-	<h3 style="margin: 30px 0 60px; white-space: nowrap;">
-		<img data-themed src="assets/taler-logo-2021-plain.svg" alt="Taler"
-			style="height: 110px; margin: 0; vertical-align: -36px; background: transparent;"/><span style="font-weight: bold; color: var(--diagram-brand);">'s goals</span>
+	<!-- The real Taler logo stands in for the word "Taler". -->
+	<h3 class="goals-title">
+		<img data-themed class="goals-logo" src="assets/taler-logo-2021-plain.svg" alt="Taler"/><span class="goals-suffix">'s goals</span>
 	</h3>
 	<!-- One card per goal, revealed in order. -->
 	<div class="card-grid">

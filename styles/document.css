@@ -31,14 +31,42 @@
 	--diagram-brand: var(--diagram-icon);
 }
 
+/* Money-laundering slides (#cheat1-3), dark: the two people get their own neon
+   colour — outline, icon and label — on a dark tint of it, like the coin key
+   frames: A in the linking-key teal, B in fuchsia. Colours: personA, personAFill,
+   personB, personBFill in theme.js. The merchant keeps the standard node look. */
+:root[data-theme="dark"] .reveal [id^="cheat"] svg .node-icon[data-node="a"] {
+	--diagram-surface: var(--diagram-person-a-fill);
+	--diagram-brand: var(--diagram-person-a);
+	--diagram-text: var(--diagram-person-a);
+	fill: var(--diagram-person-a);
+}
+:root[data-theme="dark"] .reveal [id^="cheat"] svg .node-icon[data-node="b"] {
+	--diagram-surface: var(--diagram-person-b-fill);
+	--diagram-brand: var(--diagram-person-b);
+	--diagram-text: var(--diagram-person-b);
+	fill: var(--diagram-person-b);
+}
+:root[data-theme="dark"] .reveal [id^="cheat"] svg .node-icon[data-node="a"] > g:first-child > :is(circle, ellipse) {
+	stroke: var(--diagram-person-a); stroke-width: 1.5px;
+}
+:root[data-theme="dark"] .reveal [id^="cheat"] svg .node-icon[data-node="b"] > g:first-child > :is(circle, ellipse) {
+	stroke: var(--diagram-person-b); stroke-width: 1.5px;
+}
+/* Thinner person icon to match the thin outline (source stroke: 2.3px). */
+:root[data-theme="dark"] .reveal [id^="cheat"] svg .node-icon:is([data-node="a"], [data-node="b"]) path {
+	stroke-width: 1.5px;
+}
+
 /* Payment / money-laundering slides: the tinted panel behind each diagram
-   (data-id bg-an / bg-cheat) becomes a card in the slide colour in dark: just
-   the card border, so it groups the diagram without a fill competing with the
-   nodes. */
+   (data-id bg-an / bg-cheat) gets the neon look of the section bands in dark:
+   a dark fill, a thin neon-blue border and a soft glow (panelFill /
+   stripeEdge / stripeGlow in theme.js). */
 :root[data-theme="dark"] .reveal [data-id="bg-an"],
 :root[data-theme="dark"] .reveal [data-id="bg-cheat"] {
-	background: var(--taler-bg);
-	box-shadow: inset 0 0 0 1px var(--taler-card-border), 0 10px 30px var(--taler-card-shadow);
+	background: var(--taler-panel-fill);
+	box-shadow: inset 0 0 0 1.5px var(--taler-stripe-edge),
+		0 0 28px var(--taler-stripe-glow), inset 0 0 28px var(--taler-stripe-glow);
 }
 
 /* Labels that must read white in dark: the amount + person in the "-10$"
@@ -75,10 +103,14 @@
 	to   { transform: none; opacity: 1; }
 }
 @media print { #theme-toggle { display: none; } }
-/* Out of the way while presenting fullscreen: reveal's F key (Fullscreen API)
-   and the browser's own fullscreen (F11). */
-:fullscreen #theme-toggle { display: none; }
-@media (display-mode: fullscreen) { #theme-toggle { display: none; } }
+/* Toggle and reveal's navigation arrows are out of the way while presenting
+   fullscreen: reveal's F key (Fullscreen API) and the browser's own (F11).
+   !important: reveal sets the arrows' display inline. */
+:fullscreen #theme-toggle,
+:fullscreen .reveal .controls { display: none !important; }
+@media (display-mode: fullscreen) {
+	#theme-toggle, .reveal .controls { display: none !important; }
+}
 /* Set for two frames during a theme switch so colours change instantly
    (logic/theme-toggle.js). */
 .theme-switching *, .theme-switching *::before, .theme-switching *::after {
@@ -86,4 +118,47 @@
 }
 @media (prefers-reduced-motion: reduce) {
 	#theme-toggle i.spin-in { animation: none; }
+}
+
+/* ---- Per-slide dark-mode styling ------------------------------------------ */
+
+/* "How does Taler electronic cash work?" (#ecash): brand blue on the light
+   photo, the neon title outline on the dimmed photo in dark. */
+:root[data-theme="dark"] #ecash h2 {
+	color: var(--taler-title-color);
+	text-shadow: var(--taler-title-glow);
+}
+
+/* Asymmetric privacy: Customer / Merchant are solid labels, not neon titles —
+   brand blue in light, white in dark. */
+:root[data-theme="dark"] #asymmetric-privacy h2.taler-blue { color: #fff; }
+
+/* Title slide (sections/title.html), dark: one neon sign, laid out exactly as
+   in light. The logo is all neon outline — blue rings, white TALER letters
+   (logo* in theme.js, via data-themed); the .frame-line SVG frames the tagline
+   + QR in the rings' blue tube and glow, its top line open where the ring
+   bottoms cross it; the background spills the sign's light (titleSpill). Text
+   and QR stay plain white (the QR unblurred, so it scans cleanly). */
+#title .frame-line { display: none; }
+:root[data-theme="dark"] #title {
+	/* Neon tube: a bright halo hugging the line, then a short falloff. */
+	--sign-glow: drop-shadow(0 0 1px #8db0f5)
+		drop-shadow(0 0 3px rgba(91, 141, 239, 0.85)) drop-shadow(0 0 8px rgba(91, 141, 239, 0.45));
+}
+:root[data-theme="dark"] #title .title-logo { filter: var(--sign-glow); }
+:root[data-theme="dark"] #title .title-panel { position: relative; }
+/* The frame's box stays inside the panel's footprint (only the glow, a filter,
+   spills out), so reveal's vertical centring sees the light-mode layout. Box
+   and path coordinates (CSS px): 835 x 365, 31px left of / 66px above the
+   panel. The top line sits at the height of the flat top edge of the right
+   ring's lower part (under TALER), so it reads as that tube running on; it
+   is open over x 36-523, where the rings cross, stopping the same ~13px
+   short of the rings on both sides. */
+:root[data-theme="dark"] #title .frame-line {
+	display: block; position: absolute; left: -31px; top: -66px;
+	width: 835px; height: 365px; overflow: visible; pointer-events: none;
+	filter: var(--sign-glow);
+}
+:root[data-theme="dark"] #title .frame-line path {
+	fill: none; stroke: var(--diagram-logo-stroke); stroke-width: 2; stroke-linecap: round;
 }

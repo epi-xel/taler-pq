@@ -66,7 +66,11 @@ function markNodeIcons(container) {
 		const wrapper = shape.parentNode;
 		if (wrapper.children.length !== 1 || getComputedStyle(shape).fill !== surface) return;
 		const node = wrapper.parentNode;
-		if (node.querySelector('text')) node.classList.add('node-icon');
+		const label = node.querySelector('text');
+		if (!label) return;
+		node.classList.add('node-icon');
+		// Label as a hook for per-agent styling, e.g. data-node="a" (document.css).
+		node.setAttribute('data-node', label.textContent.trim().toLowerCase());
 	});
 }
 

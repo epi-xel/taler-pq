@@ -30,8 +30,14 @@ window.TALER = {
 			gradTo:   '#222222',                  // title gradient end (left)
 			stripeFrom: '#0042b3',                // section band (assets/section.html) start (right)
 			stripeTo: '#222222',                  // section band end (left)
-			gradTextFrom: '#0042b3',              // slide-title gradient TEXT start (right), as in gnufi-www
-			gradTextTo: '#222222',                // slide-title gradient text end (left)
+			stripeText: '#ffffff',                // text on the section band
+			stripeEdge: '',                       // band neon edge lines ('' = none)
+			stripeGlow: '',                       // band glow ('' = none)
+			stripeTextGlow: 'none',               // text-shadow on the band text
+			stripeTextStroke: '0px transparent',  // outline on the band text
+			titleColor: '#0042b3',                // slide titles (.taler-title): solid brand blue
+			titleGlow: 'none',                    // … no glow
+			titleStroke: '0px transparent',       // … no outline
 		},
 		dark: {
 			blue:     '#5b8def',                  // brighter brand blue so it reads on dark
@@ -43,12 +49,23 @@ window.TALER = {
 			card:     '#1b2436',
 			cardBorder: '#3a4d75',                // bright enough to outline cards on the dark bg
 			cardShadow: 'rgba(0, 0, 0, 0.7)',
-			gradFrom: '#0042b3',                  // gradient stays blue→black (white text on top)
-			gradTo:   '#050b16',
-			stripeFrom: '#0042b3',
-			stripeTo: '#16223a',                  // band fades into a navy just above bg, not black
-			gradTextFrom: '#bbd0f3',              // bright blue→ice so title text reads on dark (gnufi-www)
-			gradTextTo: 'rgb(81, 113, 174)',
+			gradFrom: '#14244a',                  // title slide: the neon band's tint (stripeFrom)…
+			gradTo:   '#0e1626',                  // …softening into the slide bg; content glows (sections/title.html)
+			titleSpill: 'radial-gradient(ellipse 55% 45% at 50% 32%, rgba(91, 141, 239, 0.22), transparent 70%)', // neon logo lighting the wall
+			stripeFrom: '#14244a',                // neon band, like the coin key frames: dark blue tint…
+			stripeTo: '#14244a',
+			stripeText: '#14244a',                // band text: neon outline like the titles, filled with the band tint (stripeFrom)
+			stripeEdge: '#5b8def',                // …neon-blue edge lines…
+			stripeGlow: 'rgba(91, 141, 239, 0.35)', // …with a soft glow
+			stripeTextStroke: '0px transparent',
+			stripeTextGlow: '1.5px 0 0 #8db0f5, -1.5px 0 0 #8db0f5, 0 1.5px 0 #8db0f5, 0 -1.5px 0 #8db0f5, 1px 1px 0 #8db0f5, -1px -1px 0 #8db0f5, 1px -1px 0 #8db0f5, -1px 1px 0 #8db0f5, 0 0 12px rgba(91, 141, 239, 0.6)', // (= titleGlow)
+			panelFill: '#101b33',                 // neon panel behind payment/ML diagrams: just above bg
+			// Slide titles: neon-sign outline. Filled with the colour behind them (bg)
+			// and outlined by a ring of shadows + glow — a real text stroke would
+			// also trace Montserrat's overlapping letter shapes inside the glyphs.
+			titleColor: '#0e1626',                // = bg
+			titleStroke: '0px transparent',
+			titleGlow: '1.5px 0 0 #8db0f5, -1.5px 0 0 #8db0f5, 0 1.5px 0 #8db0f5, 0 -1.5px 0 #8db0f5, 1px 1px 0 #8db0f5, -1px -1px 0 #8db0f5, 1px -1px 0 #8db0f5, -1px 1px 0 #8db0f5, 0 0 12px rgba(91, 141, 239, 0.6)',
 		},
 	},
 
@@ -72,6 +89,11 @@ window.TALER = {
 			letter:  '',                          // letter in open envelopes ('' = each SVG's own colour)
 			icon:    '#0042b3',                   // icon inside agent nodes (Customer, Merchant, …) = brand
 			reserve: '',                          // "Reserve" bubble ('' = its light-blue gradient)
+			reserveText: '',                      // … its label ('' = brand)
+			logoFill: '',                         // title-slide logo fill ('' = white)
+			logoStroke: '',                       // … and outline ('' = none)
+			logoLettersFill: '',                  // … its TALER letters ('' = as the rings)
+			logoLettersStroke: '',
 			green:   '#39b54a',                   // derived-coin green (refresh derive)
 			washBlue: '',                         // translucent panels, per hue ('' = the SVG's own tint)
 			washGreen: '',
@@ -86,7 +108,7 @@ window.TALER = {
 			keyframeYellow: '',
 			keyframeLime: '',
 			keyframeTeal: '',
-			coinRefreshed: '',                    // refreshed ($5) coin on "Re-obtaining" ('' = coin yellow)
+			coinRefreshed: '',                    // refreshed ($5) coin: Re-obtaining, refresh derive diagrams ('' = coin yellow)
 			cardBorder: '',                       // coin card borders (coin-struc, withdraw) ('' = brand)
 			card:    '',                          // coin card fill (coin-struc, withdraw) ('' = surface)
 		},
@@ -104,7 +126,12 @@ window.TALER = {
 			paperGreen: '#1b3a2c',                // green envelope: matches the green key panels
 			letter:  '#d6e0f3',                   // letter pulled out of an envelope: light paper
 			icon:    '#dbe3f2',                   // node icons match the label text
-			reserve: '#2a3a5c',                   // solid node colour instead of the light gradient
+			reserve: '#bfd1f3',                   // light ice-blue bubble so the reserve stands out
+			reserveText: '#0e1626',               // label in the slide background colour
+			logoFill: 'none',                     // title-slide logo: neon outline, hollow…
+			logoStroke: '#8db0f5',                // …rings and frame as blue neon tubes (glow: styles/document.css)
+			logoLettersFill: 'none',              // TALER letters: outline too…
+			logoLettersStroke: '#ffffff',         // …in white
 			green:   '#a3e635',                   // lime: reads better than grass green on navy
 			washBlue: '#1b2436',                  // translucent tints become cards (= --taler-card),
 			washGreen: '#1b2436',                 // whatever their hue
@@ -120,6 +147,10 @@ window.TALER = {
 			keyframeLime: '#a3e635',              // (= green above)
 			keyframeTeal: '#65c8d0',
 			coinRefreshed: '#a3e635',             // lime, like the derived keys
+			personA: '#65c8d0',                   // money-laundering person A: linking-key teal…
+			personAFill: '#163a40',               //   …on its dark tint (= keyboxTeal)
+			personB: '#ff4fd8',                   // person B: neon fuchsia…
+			personBFill: '#3d1838',               //   …on its dark tint
 			cardBorder: '#34497a',                // softer than brand so the cards don't glow
 			card:    '#0e1626',                   // cards inset to bg so they read against the blue-wash panel
 		},
@@ -148,7 +179,9 @@ window.TALER = {
 			root.setProperty('--taler-' + k.replace(/([A-Z])/g, '-$1').toLowerCase(), t[k]);
 		});
 		root.setProperty('--taler-gradient', 'linear-gradient(to left, ' + t.gradFrom + ', ' + t.gradTo + ')');
-		root.setProperty('--taler-text-gradient', 'linear-gradient(to left, ' + t.gradTextFrom + ', ' + t.gradTextTo + ')');
+		// Title slide: the gradient, under an optional light spill (titleSpill).
+		root.setProperty('--taler-title-background', (t.titleSpill ? t.titleSpill + ', ' : '') +
+			'linear-gradient(to left, ' + t.gradFrom + ', ' + t.gradTo + ')');
 		root.setProperty('--r-background-color', t.bg);
 		root.setProperty('--r-main-color', t.text);
 		root.setProperty('--r-heading-color', t.heading);

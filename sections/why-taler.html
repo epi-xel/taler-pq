@@ -1,7 +1,7 @@
 <!-- Why Taler: card payments vs. cryptocurrencies. Photo, black and external
      iframe slides keep fixed colours in both themes. -->
 <section id="why-taler" data-background-iframe="assets/section.html" data-transition="slide">
-	<h2 class="stripe-title" style="margin:0;">
+	<h2 class="stripe-title">
 		Why Taler?
 	</h2>
 </section>
@@ -10,19 +10,14 @@
 <!-- Same photo as the previous slide, so no slide transition: the frosted panel
      fades itself in (styles/sections.css .photo-panel). -->
 <section id="classic-payment-systems-downsides" data-background="assets/creditcard.jpg" data-transition="none">
-	<style>
-		#classic-payment-systems-downsides .photo-panel {
-			display: inline-block; padding: 20pt 50pt;
-		}
-	</style>
 	<div class="photo-panel">
-		<h2 class="fragment fade-down bold" style="margin: 30pt 0; color:#222;">
+		<h2 class="fragment fade-down bold">
 			Traceability
 		</h2>
-		<h2 class="fragment fade-down bold" style="margin: 30pt 0; color:#222;">
+		<h2 class="fragment fade-down bold">
 			Profiling
 		</h2>
-		<h2 class="fragment fade-down bold" style="margin: 30pt 0; color:#222;">
+		<h2 class="fragment fade-down bold">
 			Sensitive data exposure
 		</h2>
 	</div>
@@ -32,44 +27,39 @@
 <section id="bicoin" data-background="assets/creditcard-overlay.png"
 	data-dark-background="assets/creditcard.jpg" data-dark-background-color="var(--taler-bg)" data-dark-background-opacity="0.18"
 	data-transition="slide" data-auto-animate>
-	<img data-id="bitcoin"
-	src="assets/bitcoin.png"
-	style="height: 50%;background: transparent"/>
+	<img data-id="bitcoin" class="bitcoin-big" src="assets/bitcoin.png"/>
 </section>
 <section id="cryptocurrencies" data-background="rgb(20, 22, 34)" data-auto-animate>
-	<div class="r-stack" style="width:100%;">
-		<img src="assets/crypto.png"
-			style="width:100%;"/>
-		<img data-id="bitcoin"
-			src="assets/bitcoin.png"
-			style="height: 22pt; background: transparent; position: absolute; margin-top: 29px; margin-left:97px"/>
+	<div class="r-stack crypto-stack">
+		<img class="crypto-shot" src="assets/crypto.png"/>
+		<img data-id="bitcoin" class="bitcoin-small" src="assets/bitcoin.png"/>
 	</div>
 </section>
 <section id="is-it-easy" data-background="black" data-transition="fade">
-	<h2 class="stripe-title" style="margin: 30pt;">
+	<h2 class="stripe-title">
 		Is it so "easy"...?
 	</h2>
 </section>
 <section id="web3-going-great" data-background-iframe="https://www.web3isgoinggreat.com/" data-background-interactive data-transition="fade"></section>
 <section id="cryptocurrencies-downsides" data-background="black" data-transition="fade">
-	<h2 class="stripe-title" style="margin: 30pt;">
+	<h2 class="stripe-title">
 		Frauds
 	</h2>
-	<h2 class="fragment fade-down stripe-title" style="margin: 30pt;">
+	<h2 class="fragment fade-down stripe-title">
 		Black-mailing
 	</h2>
-	<h2 class="fragment fade-down stripe-title" style="margin: 30pt;">
+	<h2 class="fragment fade-down stripe-title">
 		Deregulation
 	</h2>
-	<h2 class="fragment fade-down stripe-title" style="margin: 30pt;">
+	<h2 class="fragment fade-down stripe-title">
 		Money laundering
 	</h2>
 </section>
 <section id="real-world-rules" data-background="black" data-transition="slide">
-	<h2 class="stripe-title" style="margin: 30pt;">
+	<h2 class="stripe-title">
 		We live in a real world
 	</h2>
-	<h2 class="fragment fade-down stripe-title" style="margin: 30pt;">
+	<h2 class="fragment fade-down stripe-title">
 		...and real world has rules
 	</h2>
 </section>

@@ -3,11 +3,20 @@
   <defs>
     <style>
       .cls-1, .cls-2 {
-        fill: #fff;
+        fill: var(--diagram-logo-fill, #fff);
+        stroke: var(--diagram-logo-stroke, none);
+        stroke-width: 1.3px;   /* ≈ 1.9px on screen at the title size, like the frame */
+        stroke-linejoin: round;
       }
 
       .cls-2 {
         fill-rule: evenodd;
+      }
+
+      /* Letters can be styled apart from the rings (dark: solid white). */
+      #letters .cls-1 {
+        fill: var(--diagram-logo-letters-fill, var(--diagram-logo-fill, #fff));
+        stroke: var(--diagram-logo-letters-stroke, var(--diagram-logo-stroke, none));
       }
     </style>
   </defs>

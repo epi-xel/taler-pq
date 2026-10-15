@@ -491,7 +491,7 @@
           </g>
           <g>
             <g class="rd-cls-1">
-              <ellipse class="rd-cls-48" cx="601.42" cy="83.77" rx="41.92" ry="41.78"/>
+              <ellipse class="rd-cls-48" style="fill: var(--diagram-coin-refreshed, #fbd63b)" cx="601.42" cy="83.77" rx="41.92" ry="41.78"/>
             </g>
             <path class="rd-cls-16" d="M634.77,83.86c0,20.87-14.9,33.16-33.27,33.16s-33.27-14.85-33.27-33.16,14.9-33.16,33.27-33.16,33.27,14.85,33.27,33.16Z"/>
             <g>

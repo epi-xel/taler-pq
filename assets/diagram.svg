@@ -441,7 +441,7 @@
         <g class="cls-35">
           <circle class="cls-65" cx="495.1" cy="224.15" r="44"/>
         </g>
-        <text class="cls-15" transform="translate(459.5 231.63)"><tspan x="0" y="0">Rese</tspan><tspan class="cls-63" x="42.98" y="0">r</tspan><tspan class="cls-40" x="50.56" y="0">v</tspan><tspan x="60.47" y="0">e</tspan></text>
+        <text class="cls-15" style="fill: var(--diagram-reserve-text, var(--diagram-brand, #0042b3))" transform="translate(459.5 231.63)"><tspan x="0" y="0">Rese</tspan><tspan class="cls-63" x="42.98" y="0">r</tspan><tspan class="cls-40" x="50.56" y="0">v</tspan><tspan x="60.47" y="0">e</tspan></text>
       </g>
     </g>
     <g id="wire-money1-group" class="fragment fade" data-step="wire-money1" data-fragment-index="3">

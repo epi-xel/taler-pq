@@ -51,7 +51,7 @@ function startApp() {
 			autoAnimateDuration: 0.5,
 			autoAnimateStyles: ['opacity', 'color'],
 			plugins: [RevealNotes],
-			controls: 'speaker'
+			controls: true   // hidden in fullscreen (styles/document.css)
 		});
 	});
 }
