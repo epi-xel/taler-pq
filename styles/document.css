@@ -123,11 +123,8 @@
 /* ---- Per-slide dark-mode styling ------------------------------------------ */
 
 /* "How does Taler electronic cash work?" (#ecash): brand blue on the light
-   photo, the neon title outline on the dimmed photo in dark. */
-:root[data-theme="dark"] #ecash h2 {
-	color: var(--taler-title-color);
-	text-shadow: var(--taler-title-glow);
-}
+   photo, plain white on the dimmed photo in dark. */
+:root[data-theme="dark"] #ecash h2 { color: #fff; }
 
 /* Asymmetric privacy: Customer / Merchant are solid labels, not neon titles —
    brand blue in light, white in dark. */

@@ -4,6 +4,11 @@
 // the new line breaks; different text crossfades. The real pills are hidden
 // while copies fly above both slides: the slides crossfade underneath, so the
 // copies must not live inside either.
+//
+// The source may also be an SVG <text> inside an inlined diagram (e.g. a
+// "Refresh Derive" box): each of its lines flies to the matching word of the
+// destination heading, scaling to the heading's size and fading from the
+// diagram colour into the heading's own look (colour, neon outline/glow).
 
 const PILL_MORPH_DURATION = 0.7;
 
@@ -130,11 +135,94 @@ function centredText(el, box) {
 	return t;
 }
 
+// ---- SVG text -> heading ----------------------------------------------------
+
+// Client rect -> coordinates inside .reveal .slides (undoing reveal's scale).
+// Used for SVG text, which has no offset*; the source/target slides must not be
+// mid slide-transform, so these slide pairs use a fade transition.
+function slidesBox(el, slides) {
+	const r = el.getBoundingClientRect();
+	const s = slides.getBoundingClientRect();
+	const k = Reveal.getScale();
+	return { x: (r.left - s.left) / k, y: (r.top - s.top) / k, w: r.width / k, h: r.height / k };
+}
+
+// Lines of an SVG <text> (its tspans grouped by y), each with its text and box.
+function svgLines(text, slides) {
+	const lines = new Map();
+	text.querySelectorAll('tspan').forEach(t => {
+		const y = t.getAttribute('y') || '0';
+		if (!lines.has(y)) lines.set(y, []);
+		lines.get(y).push(t);
+	});
+	return Array.from(lines.values()).map(spans => {
+		const boxes = spans.map(t => slidesBox(t, slides));
+		const x = Math.min(...boxes.map(b => b.x)), y = Math.min(...boxes.map(b => b.y));
+		const r = Math.max(...boxes.map(b => b.x + b.w)), btm = Math.max(...boxes.map(b => b.y + b.h));
+		return { text: spans.map(t => t.textContent).join(''), x: x, y: y, w: r - x, h: btm - y };
+	});
+}
+
+function morphSvgText(from, to) {
+	const slides = document.querySelector('.reveal .slides');
+	const lines = svgLines(from, slides);
+	const words = wrapWords(to);
+	if (lines.length !== words.length || lines.some((l, i) => l.text !== words[i].textContent)) return;
+
+	const toStyle = getComputedStyle(to);
+	const startColor = getComputedStyle(from).fill;
+	const flying = words.map((word, i) => {
+		const a = lines[i];
+		const b = slidesBox(word, slides);
+		const w = document.createElement('span');
+		w.textContent = word.textContent;
+		Object.assign(w.style, {
+			position: 'absolute', left: 0, top: 0, margin: 0, padding: 0,
+			whiteSpace: 'nowrap', zIndex: 101, pointerEvents: 'none', transformOrigin: '0 0',
+			font: toStyle.font, letterSpacing: toStyle.letterSpacing, lineHeight: b.h + 'px',
+			webkitTextStroke: toStyle.webkitTextStroke, textShadow: toStyle.textShadow,
+		});
+		slides.appendChild(w);
+		// Same word in the same family: the width ratio is the size ratio.
+		const k = a.w / b.w;
+		return { el: w, from: { x: a.x, y: a.y + a.h / 2 - b.h * k / 2, scale: k }, to: { x: b.x, y: b.y } };
+	});
+
+	from.style.visibility = 'hidden';
+	to.style.visibility = 'hidden';
+	const done = () => {
+		flying.forEach(f => f.el.remove());
+		from.style.visibility = '';
+		to.style.visibility = '';
+	};
+
+	const tl = gsap.timeline({ onComplete: done, onInterrupt: done });
+	flying.forEach(f => {
+		tl.fromTo(f.el,
+			{ x: f.from.x, y: f.from.y, scale: f.from.scale, color: startColor },
+			{ x: f.to.x, y: f.to.y, scale: 1, duration: PILL_MORPH_DURATION, ease: 'power2.inOut' }, 0)
+			.to(f.el, { color: toStyle.color, duration: 0.4, ease: 'none' }, 0.2);
+	});
+}
+
+// Shown = not inside a fragment that is still hidden.
+function morphSourceVisible(el) {
+	for (let f = el.closest('.fragment'); f; f = f.parentElement && f.parentElement.closest('.fragment')) {
+		if (!f.classList.contains('visible')) return false;
+	}
+	return true;
+}
+
 Reveal.on('slidechanged', e => {
 	if (!e.previousSlide) return;
 	e.currentSlide.querySelectorAll('[data-morph]').forEach(to => {
 		const from = e.previousSlide.querySelector(
 			'[data-morph="' + to.dataset.morph + '"]');
-		if (from && pillVisible(from) && pillVisible(to)) morphPill(from, to);
+		if (!from || to instanceof SVGElement) return;
+		if (from instanceof SVGElement) {
+			if (morphSourceVisible(from)) morphSvgText(from, to);
+		} else if (pillVisible(from) && pillVisible(to)) {
+			morphPill(from, to);
+		}
 	});
 });

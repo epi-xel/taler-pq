@@ -18,7 +18,7 @@
 		Refresh protocol
 	</h2>
 </section>
-<section data-background="var(--taler-bg)" data-auto-animate>
+<section data-background="var(--taler-bg)" data-auto-animate data-transition="slide-in fade-out">
 	<div class="v-stack">
 		<h2 data-id="refresh-prot-text" class="taler-title" style="font-size: 42pt">
 			Refresh protocol
@@ -29,9 +29,11 @@
 		</h4>
 	</div>
 </section>
-<section data-background="var(--taler-bg)" data-transition="slide" data-auto-animate data-auto-animate-restart>
+<!-- Its title is flown in from the middle "Refresh Derive" box of the
+     cut-and-choose diagram (logic/sections/pill-morph.js), hence the fade in. -->
+<section data-background="var(--taler-bg)" data-transition="fade-in slide-out" data-auto-animate data-auto-animate-restart>
 	<div class="v-stack">
-		<h3 data-id="refresh-der" class="taler-title" style="margin: 30pt;">
+		<h3 data-id="refresh-der" data-morph="refresh-der-title" class="taler-title" style="margin: 30pt;">
 			Refresh Derive
 		</h3>
 		<div style="width:100%; display:flex; justify-content:center;">
