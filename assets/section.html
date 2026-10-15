@@ -48,6 +48,8 @@ html, body {
 			const from = root.getPropertyValue('--taler-stripe-from').trim();
 			const to = root.getPropertyValue('--taler-stripe-to').trim();
 			const stripe = document.querySelector('.stripe');
+			const height = root.getPropertyValue('--taler-stripe-height').trim();
+			stripe.style.height = height || '';
 			if (from && to) stripe.style.background = 'linear-gradient(to left, ' + from + ', ' + to + ')';
 			// Neon edge (dark): thin lines top and bottom plus a soft glow; '' = none.
 			const edge = root.getPropertyValue('--taler-stripe-edge').trim();

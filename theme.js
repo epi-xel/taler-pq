@@ -26,11 +26,12 @@ window.TALER = {
 			card:     '#ffffff',                  // card surface
 			cardBorder: '#d8e2f3',                // 1px card border
 			cardShadow: 'rgba(0, 66, 179, 0.12)', // card drop shadow
-			gradFrom: '#0042b3',                  // title gradient start (right)
-			gradTo:   '#222222',                  // title gradient end (left)
+			gradFrom: '#e3e9f4',                  // title slide: pale blue-grey, so the white logo card stands out
+			gradTo:   '#e3e9f4',
 			stripeFrom: '#0042b3',                // section band (assets/section.html) start (right)
 			stripeTo: '#222222',                  // section band end (left)
 			stripeText: '#ffffff',                // text on the section band
+			stripeHeight: '17vmin',               // band height (assets/section.html)
 			stripeEdge: '',                       // band neon edge lines ('' = none)
 			stripeGlow: '',                       // band glow ('' = none)
 			stripeTextGlow: 'none',               // text-shadow on the band text
@@ -54,6 +55,7 @@ window.TALER = {
 			titleSpill: 'radial-gradient(ellipse 55% 45% at 50% 32%, rgba(91, 141, 239, 0.22), transparent 70%)', // neon logo lighting the wall
 			stripeFrom: '#14244a',                // neon band, like the coin key frames: dark blue tint…
 			stripeTo: '#14244a',
+			stripeHeight: '23vmin',
 			stripeText: '#14244a',                // band text: neon outline like the titles, filled with the band tint (stripeFrom)
 			stripeEdge: '#5b8def',                // …neon-blue edge lines…
 			stripeGlow: 'rgba(91, 141, 239, 0.35)', // …with a soft glow
@@ -90,9 +92,9 @@ window.TALER = {
 			icon:    '#0042b3',                   // icon inside agent nodes (Customer, Merchant, …) = brand
 			reserve: '',                          // "Reserve" bubble ('' = its light-blue gradient)
 			reserveText: '',                      // … its label ('' = brand)
-			logoFill: '',                         // title-slide logo fill ('' = white)
+			logoFill: '#0042b3',                  // title-slide logo fill: brand blue on the white slide ('' = white)
 			logoStroke: '',                       // … and outline ('' = none)
-			logoLettersFill: '',                  // … its TALER letters ('' = as the rings)
+			logoLettersFill: '#000000',           // … its TALER letters: black, like the goals-slide logo ('' = as the rings)
 			logoLettersStroke: '',
 			green:   '#39b54a',                   // derived-coin green (refresh derive)
 			washBlue: '',                         // translucent panels, per hue ('' = the SVG's own tint)

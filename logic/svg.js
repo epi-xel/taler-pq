@@ -74,9 +74,10 @@ function markNodeIcons(container) {
 	});
 }
 
-// <img data-themed> can't read CSS vars, so in dark mode fetch the SVG, resolve
-// each var(--diagram-x, fallback) to the current value, and swap in a data URL.
-// Light mode shows the original files (the fallbacks are the light colours).
+// <img data-themed> can't read CSS vars, so fetch the SVG, resolve each
+// var(--diagram-x, fallback) to the current value, and swap in a data URL.
+// Both modes go through this (light sets e.g. the title logo's blue fill);
+// unset light vars ('') keep each SVG's fallback, i.e. the original colour.
 // data-themed records the mode an image was last drawn for, so this re-runs
 // cheaply (resize) and redraws only after a theme switch (logic/theme-toggle.js).
 // The original file is kept in data-original-src (not data-src: reveal.js
@@ -88,10 +89,6 @@ function themeImages() {
 	return Array.from(imgs).map(function (img) {
 		if (!img.dataset.originalSrc) img.dataset.originalSrc = img.getAttribute('src');
 		img.setAttribute('data-themed', mode);
-		if (mode === 'light') {
-			img.src = img.dataset.originalSrc;
-			return Promise.resolve();
-		}
 		return fetch(img.dataset.originalSrc)
 			.then(r => r.text())
 			.then(svg => {
